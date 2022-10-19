@@ -1,0 +1,36 @@
+{
+  "empresa": [
+    {
+      "id": 1,
+      "nombre": "TheNetFirm"
+    },
+    {
+      "id": 2,
+      "nombre": "AdfinPlus"
+    },
+    {
+      "id": 3,
+      "nombre": "sdfgsdfsdf"
+    },
+    {
+      "nombre": "Soy una Empresa SL",
+      "id": 4
+    },
+    {
+      "nombre": "soy una empresa",
+      "id": 5
+    },
+    {
+      "nombre": "soy una empresa",
+      "id": 6
+    },
+    {
+      "nombre": "Mercadona",
+      "id": 7
+    },
+    {
+      "nombre": "Pamesa",
+      "id": 8
+    }
+  ]
+}
