@@ -10,7 +10,7 @@
     },
     {
       "id": 3,
-      "nombre": "sdfgsdfsdf"
+      "nombre": "Consum"
     },
     {
       "nombre": "Soy una Empresa SL",
@@ -31,6 +31,26 @@
     {
       "nombre": "Pamesa",
       "id": 8
+    },
+    {
+      "nombre": "otra más ",
+      "id": 9
+    },
+    {
+      "nombre": "ayayay",
+      "id": 10
+    },
+    {
+      "nombre": "ergergr",
+      "id": 11
+    },
+    {
+      "nombre": "ns",
+      "id": 12
+    },
+    {
+      "nombre": "cambio",
+      "id": 13
     }
   ]
 }

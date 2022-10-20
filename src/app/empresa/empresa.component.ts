@@ -14,7 +14,7 @@ import { PopupComponent } from '../popup/popup.component';
 })
 export class EmpresaComponent implements OnInit {
 
-  constructor(private dialog: MatDialog, private api:ApiService) { }
+  constructor(private dialog: MatDialog, private api: ApiService) { }
   empresaData!: Empresa[];
 
   ngOnInit(): void {
@@ -24,23 +24,29 @@ export class EmpresaComponent implements OnInit {
   displayColumns: string[] = ["idEmpresa", "nombre", "action"];
 
   openPopup(id: any) {
-    const _popup =
-    this.dialog.open(PopupComponent, {
-      width: '50%',
-      exitAnimationDuration: '500ms',
-      enterAnimationDuration: '500ms',
-      data: {
-        id: id
-      }
-    });
-    _popup.afterClosed().subscribe(r => {
+    const popup =
+      this.dialog.open(PopupComponent, {
+        width: '50%',
+        exitAnimationDuration: '500ms',
+        enterAnimationDuration: '500ms',
+        //necesito el id
+        data: {
+          id: id
+        }
+      });
+    popup.afterClosed().subscribe(r => {
       this.loadCompany();
     })
   }
-  loadCompany(){
-    this.api.getAllEmpresas().subscribe(response =>{
+
+  loadCompany() {
+    this.api.getAllEmpresas().subscribe(response => {
       this.empresaData = response;
     })
+  }
+
+  editEmpresa(id: any) {
+    this.openPopup(id);
   }
 
 }

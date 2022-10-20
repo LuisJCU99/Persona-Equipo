@@ -19,7 +19,15 @@ export class ApiService {
   createEmpresa(empresaData: any) {
     return this.http.post(this.apiUrl, empresaData)
   }
-
+  getEmpresaById(id:any): Observable<Empresa[]> {
+    return this.http.get<Empresa[]>(this.apiUrl+'/'+id);
+  }
+  removeEmpresaById(id:any){
+    return this.http.delete(this.apiUrl+'/'+id);
+  }
+  updateEmpresa(id:any, empresaData:any) {
+    return this.http.put(this.apiUrl+'/'+ id, empresaData)
+  }
   
 
 }

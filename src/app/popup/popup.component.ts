@@ -1,8 +1,9 @@
 import { _getFocusedElementPierceShadowDom } from '@angular/cdk/platform';
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ApiService } from '../lib/services/api.service';
+
 
 
 @Component({
@@ -11,10 +12,18 @@ import { ApiService } from '../lib/services/api.service';
   styleUrls: ['./popup.component.css']
 })
 export class PopupComponent implements OnInit {
-
-  constructor(private builder: FormBuilder, private dialog: MatDialog, private api: ApiService) { }
+  editData: any;
+  constructor(private builder: FormBuilder, private dialog: MatDialog, private api: ApiService,
+    @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(): void {
+    //Si hay id en los campos del form de la ventana modal, coge la empresa seleccionada por ID, y con los datos cogidos en el response del subscribe, me los seteas en los campos del form 
+    if (this.data.id != '' && this.data.id != null) {
+      this.api.getEmpresaById(this.data.id).subscribe(response => {
+        this.editData = response;
+        this.empresaForm.setValue({ id: this.editData.id, nombre: this.editData.nombre })
+      });
+    }
   }
   empresaForm = this.builder.group({
     id: this.builder.control({ value: '', disabled: true }),
@@ -23,14 +32,23 @@ export class PopupComponent implements OnInit {
 
   saveEmpresa() {
     if (this.empresaForm.valid) {
-      this.api.createEmpresa(this.empresaForm.value).subscribe(response => {
-        alert("guardado correctamente");
-        console.log(response);
-      });
+      const editid = this.empresaForm.getRawValue().id;
+      if (editid != '' && editid != null) {
+        this.api.updateEmpresa(editid, this.empresaForm.getRawValue()).subscribe(response => {
+          alert("Actualizado correctamente");
+          console.log(response);
+        });
+      } else {
+        this.api.createEmpresa(this.empresaForm.value).subscribe(response => {
+          alert("Guardado correctamente");
+          console.log(response);
+        });
+      }
+
     }
   }
 
-  closePopup(){
+  closePopup() {
     this.dialog.closeAll();
   }
 
