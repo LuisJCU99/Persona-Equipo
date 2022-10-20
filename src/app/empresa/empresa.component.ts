@@ -48,5 +48,10 @@ export class EmpresaComponent implements OnInit {
   editEmpresa(id: any) {
     this.openPopup(id);
   }
+  deleteEmpresa(id: any) {
+    this.api.removeEmpresaById(id).subscribe(response => {
+      this.loadCompany();
+    })
+  }
 
 }
