@@ -22,7 +22,7 @@ export class ApiService {
   getEmpresaById(id:any): Observable<Empresa[]> {
     return this.http.get<Empresa[]>(this.apiUrl+'/'+id);
   }
-  removeEmpresaById(id:any){
+  deleteEmpresaById(id:any){
     return this.http.delete(this.apiUrl+'/'+id);
   }
   updateEmpresa(id:any, empresaData:any) {

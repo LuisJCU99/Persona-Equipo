@@ -3,6 +3,8 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ApiService } from '../lib/services/api.service';
+import * as alertifyjs from 'alertifyjs';
+
 
 
 
@@ -35,13 +37,13 @@ export class PopupComponent implements OnInit {
       const editid = this.empresaForm.getRawValue().id;
       if (editid != '' && editid != null) {
         this.api.updateEmpresa(editid, this.empresaForm.getRawValue()).subscribe(response => {
-          alert("Actualizado correctamente");
-          console.log(response);
+          this.closePopup();
+          alertifyjs.success("¡Actualizado con éxito!")
         });
       } else {
         this.api.createEmpresa(this.empresaForm.value).subscribe(response => {
-          alert("Guardado correctamente");
-          console.log(response);
+          this.closePopup();
+          alertifyjs.success("¡Los cambios se han guardado con éxito!")
         });
       }
 
@@ -50,6 +52,7 @@ export class PopupComponent implements OnInit {
 
   closePopup() {
     this.dialog.closeAll();
+
   }
 
   /*

@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Empresa } from '../lib/models/empresa';
 import { ApiService } from '../lib/services/api.service';
 import { PopupComponent } from '../popup/popup.component';
+import * as alertifyjs from 'alertifyjs';
 
 
 
@@ -49,9 +50,11 @@ export class EmpresaComponent implements OnInit {
     this.openPopup(id);
   }
   deleteEmpresa(id: any) {
-    this.api.removeEmpresaById(id).subscribe(response => {
-      this.loadCompany();
+    alertifyjs.confirm("Eliminar", "¿Estás seguro de que deseas borrar el siguiente elemento?", () => {
+      this.api.deleteEmpresaById(id).subscribe(r => {
+        this.loadCompany();
+      });
+    }, function () {
     })
   }
-
 }
