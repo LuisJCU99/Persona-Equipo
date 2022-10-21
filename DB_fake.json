@@ -16,5 +16,15 @@
       "nombre": "hioijli",
       "id": 6
     }
+  ],
+  "trabajador": [
+    {
+      "id": "20956136p",
+      "nombre": "Luis"
+    },
+    {
+      "nombre": "Marcos",
+      "id": "YzjNkqA"
+    }
   ]
 }

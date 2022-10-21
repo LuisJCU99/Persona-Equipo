@@ -12,6 +12,7 @@ import { TrabajadoresComponent } from './trabajadores/trabajadores.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { RecursosComponent } from './recursos/recursos.component';
+import { PopupTrabajadoresComponent } from './trabajadores/popup-trabajadores/popup-trabajadores.component';
 
 
 
@@ -22,7 +23,8 @@ import { RecursosComponent } from './recursos/recursos.component';
     PopupComponent,
     TrabajadoresComponent,
     ProyectosComponent,
-    RecursosComponent
+    RecursosComponent,
+    PopupTrabajadoresComponent
   ],
   imports: [
     BrowserModule,

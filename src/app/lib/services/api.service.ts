@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Empresa } from "../models/empresa";
+import { Trabajador } from '../models/trabajador';
 
 @Injectable({
   providedIn: 'root'
@@ -27,6 +28,22 @@ export class ApiService {
   }
   updateEmpresa(id: any, empresaData: any) {
     return this.http.put(this.apiUrl + '/empresa' + '/' + id, empresaData)
+  }
+
+  getAllTrabajadores(): Observable<Trabajador[]> {
+    return this.http.get<Trabajador[]>(this.apiUrl + '/trabajador');
+  }
+  createTrabajador(trabajadorData: any) {
+    return this.http.post(this.apiUrl + '/trabajador', trabajadorData)
+  }
+  getTrabajadorById(id: any): Observable<Trabajador[]> {
+    return this.http.get<Trabajador[]>(this.apiUrl + '/trabajador' + '/' + id);
+  }
+  deleteTrabajadorById(id: any) {
+    return this.http.delete(this.apiUrl + '/trabajador' + '/' + id);
+  }
+  updateTrabajador(id: any, trabajadorData: any) {
+    return this.http.put(this.apiUrl + '/trabajador' + '/' + id, trabajadorData)
   }
 
 
