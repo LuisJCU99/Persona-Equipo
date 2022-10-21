@@ -14,10 +14,33 @@
             <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
         </ng-container>
 
+        <ng-container matColumnDef="apellidos">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Apellidos </th>
+            <td mat-cell *matCellDef="let element"> {{element.apellidos}} </td>
+        </ng-container>
+
         <ng-container matColumnDef="usuario">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Usuario </th>
             <td mat-cell *matCellDef="let element"> {{element.usuario}} </td>
         </ng-container>
+
+        <ng-container matColumnDef="email_tnf">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Email TheNetFirm </th>
+            <td mat-cell *matCellDef="let element"> {{element.email_tnf}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="password">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Contraseña </th>
+            <td mat-cell *matCellDef="let element"> {{element.password}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="gmail_tnf">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Gmail de TheNetFirm </th>
+            <td mat-cell *matCellDef="let element"> {{element.gmail_tnf}} </td>
+        </ng-container>
+
+
+   
 
         <ng-container matColumnDef="action">
             <th mat-header-cell *matHeaderCellDef> Action </th>

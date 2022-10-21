@@ -20,14 +20,19 @@ export class PopupTrabajadoresComponent implements OnInit {
     if (this.data.id != '' && this.data.id != null) {
       this.api.getTrabajadorById(this.data.id).subscribe(response => {
         this.editData = response;
-        this.trabajadorForm.setValue({ id: this.editData.id, nombre: this.editData.nombre,  usuario: this.editData.usuario })
+        this.trabajadorForm.setValue({ id: this.editData.id, nombre: this.editData.nombre,  usuario: this.editData.usuario, 
+          email_tnf: this.editData.email_tnf, apellidos: this.editData.apellidos, password: this.editData.password, gmail_tnf: this.editData.gmail_tnf })
       });
     }
   }
   trabajadorForm = this.builder.group({
     id: this.builder.control({ value: '', disabled: true }),
     nombre: this.builder.control('', Validators.required),
-    usuario: this.builder.control('', Validators.required)
+    usuario: this.builder.control('', Validators.required),
+    email_tnf: this.builder.control('', Validators.required),
+    apellidos: this.builder.control('', Validators.required),
+    password: this.builder.control('', Validators.required),
+    gmail_tnf: this.builder.control('', Validators.required)
 
   });
 
@@ -53,12 +58,4 @@ export class PopupTrabajadoresComponent implements OnInit {
     this.dialog.closeAll();
 
   }
-
-  /*
-  gettrabajador() {
-    this.api.getAlltrabajadors().subscribe(response => {
-      console.log(response);
-    });
-  }
-  */
 }

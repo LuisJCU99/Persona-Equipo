@@ -21,12 +21,20 @@
     {
       "id": "20956136p",
       "nombre": "Luis",
-      "usuario": "luis.castano"
+      "usuario": "luis.castano",
+      "email_tnf": "luis.castano@thenetfirm.com",
+      "apellidos": "Castaño",
+      "password": "20!LCastano#22",
+      "gmail_tnf": "alexballestertnf@gmail.com"
     },
     {
-      "id": "YzjNkqA",
-      "nombre": "Marcos",
-      "usuario": "marcos.almendrasa"
+      "nombre": "fgdf",
+      "usuario": "dgfdg",
+      "email_tnf": "fgdfgdfg",
+      "apellidos": "gdfgdfgdfg",
+      "password": "fdgdfgdfg",
+      "gmail_tnf": "fdgfdgf",
+      "id": "-XKJzBy"
     }
   ]
 }

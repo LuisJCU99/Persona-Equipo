@@ -1,20 +1,41 @@
 <mat-card>
     <mat-card-content>
-        <h3>Crear nuevo trabajador</h3>
+        <h3>Trabajador</h3>
         <form [formGroup]="trabajadorForm" (ngSubmit)="saveTrabajador()">
 
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Id</mat-label>
                 <input matInput placeholder="Id del trabajador" formControlName="id">
             </mat-form-field>
-            <br>
+           
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Nombre</mat-label>
                 <input matInput placeholder="Nombre" formControlName="nombre">
             </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Apellidos</mat-label>
+                <input matInput placeholder="Apellidos" formControlName="apellidos">
+            </mat-form-field>
+           
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Usuario</mat-label>
                 <input matInput placeholder="Usuario" formControlName="usuario">
+            </mat-form-field>
+           
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Email TheNetFirm</mat-label>
+                <input matInput placeholder="Email tnf" formControlName="email_tnf">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Contraseña</mat-label>
+                <input matInput placeholder="Contraseña" formControlName="password">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Gmail TheNetFirm</mat-label>
+                <input matInput placeholder="Gmail TheNetFirm" formControlName="gmail_tnf">
             </mat-form-field>
             <div class="example-button-row">
                 <button mat-raised-button color = "primary">Guardar</button> | <a mat-raised-button color = "accent" (click)="closePopup()">Cerrar</a>
