@@ -9,8 +9,12 @@
             </mat-form-field>
             <br>
             <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>Nombre del trabajador</mat-label>
+                <mat-label>Nombre</mat-label>
                 <input matInput placeholder="Nombre" formControlName="nombre">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Usuario</mat-label>
+                <input matInput placeholder="Usuario" formControlName="usuario">
             </mat-form-field>
             <div class="example-button-row">
                 <button mat-raised-button color = "primary">Guardar</button> | <a mat-raised-button color = "accent" (click)="closePopup()">Cerrar</a>

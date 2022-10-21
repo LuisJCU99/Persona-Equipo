@@ -20,13 +20,15 @@ export class PopupTrabajadoresComponent implements OnInit {
     if (this.data.id != '' && this.data.id != null) {
       this.api.getTrabajadorById(this.data.id).subscribe(response => {
         this.editData = response;
-        this.trabajadorForm.setValue({ id: this.editData.id, nombre: this.editData.nombre })
+        this.trabajadorForm.setValue({ id: this.editData.id, nombre: this.editData.nombre,  usuario: this.editData.usuario })
       });
     }
   }
   trabajadorForm = this.builder.group({
     id: this.builder.control({ value: '', disabled: true }),
-    nombre: this.builder.control('', Validators.required)
+    nombre: this.builder.control('', Validators.required),
+    usuario: this.builder.control('', Validators.required)
+
   });
 
   saveTrabajador() {

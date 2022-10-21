@@ -20,11 +20,13 @@
   "trabajador": [
     {
       "id": "20956136p",
-      "nombre": "Luis"
+      "nombre": "Luis",
+      "usuario": "luis.castano"
     },
     {
+      "id": "YzjNkqA",
       "nombre": "Marcos",
-      "id": "YzjNkqA"
+      "usuario": "marcos.almendrasa"
     }
   ]
 }

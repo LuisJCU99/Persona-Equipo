@@ -30,6 +30,7 @@ export class ApiService {
     return this.http.put(this.apiUrl + '/empresa' + '/' + id, empresaData)
   }
 
+  
   getAllTrabajadores(): Observable<Trabajador[]> {
     return this.http.get<Trabajador[]>(this.apiUrl + '/trabajador');
   }
