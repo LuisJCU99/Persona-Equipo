@@ -2,11 +2,8 @@ import { _getFocusedElementPierceShadowDom } from '@angular/cdk/platform';
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { ApiService } from '../lib/services/api.service';
+import { ApiService } from '../../lib/services/api.service';
 import * as alertifyjs from 'alertifyjs';
-
-
-
 
 @Component({
   selector: 'app-popup',

@@ -6,22 +6,31 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EmpresaComponent } from './empresa/empresa.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from 'src/MaterialModule';
-import { PopupComponent } from './popup/popup.component';
+import { PopupComponent } from './empresa/popup/popup.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TrabajadoresComponent } from './trabajadores/trabajadores.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ProyectosComponent } from './proyectos/proyectos.component';
+import { RecursosComponent } from './recursos/recursos.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     EmpresaComponent,
-    PopupComponent
+    PopupComponent,
+    TrabajadoresComponent,
+    ProyectosComponent,
+    RecursosComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
     
   ],
   providers: [],

@@ -1,1 +1,13 @@
-<app-empresa></app-empresa>
+<mat-sidenav-container>
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <button mat-button routerLink="/empresa">Empresas</button>
+          <button mat-button routerLink="/trabajadores">Trabajadores</button>
+          <button mat-button routerLink="/proyectos">Proyectos</button>
+          <button mat-button routerLink="/recursos">Recursos</button>
+        </mat-toolbar-row>
+      </mat-toolbar>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <router-outlet></router-outlet>

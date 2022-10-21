@@ -3,7 +3,7 @@ import { FormControl } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Empresa } from '../lib/models/empresa';
 import { ApiService } from '../lib/services/api.service';
-import { PopupComponent } from '../popup/popup.component';
+import { PopupComponent } from './popup/popup.component';
 import * as alertifyjs from 'alertifyjs';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
@@ -24,7 +24,7 @@ export class EmpresaComponent implements OnInit {
   finalData: any;
 
   ngOnInit(): void {
-    this.loadCompany();
+    this.loadEmpresa();
   }
 
   displayColumns: string[] = ["id", "nombre", "action"];
@@ -41,11 +41,11 @@ export class EmpresaComponent implements OnInit {
         }
       });
     popup.afterClosed().subscribe(r => {
-      this.loadCompany();
+      this.loadEmpresa();
     })
   }
 
-  loadCompany() {
+  loadEmpresa() {
     this.api.getAllEmpresas().subscribe(response => {
       this.empresaData = response;
       this.finalData = new MatTableDataSource<Empresa>(this.empresaData);
@@ -61,7 +61,7 @@ export class EmpresaComponent implements OnInit {
   deleteEmpresa(id: any) {
     alertifyjs.confirm("Eliminar", "¿Estás seguro de que deseas borrar el siguiente elemento?", () => {
       this.api.deleteEmpresaById(id).subscribe(r => {
-        this.loadCompany();
+        this.loadEmpresa();
       });
     }, function () {
     })
