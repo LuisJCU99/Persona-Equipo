@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -13,8 +13,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { RecursosComponent } from './recursos/recursos.component';
 import { PopupTrabajadoresComponent } from './trabajadores/popup-trabajadores/popup-trabajadores.component';
+import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 
-
+function initializeKeycloak(keycloak: KeycloakService) {
+  return () =>
+    keycloak.init({
+      config: {
+        url: 'http://127.0.0.1:8580',
+        realm: 'Gestion-AdFinPlus-1.0',
+        clientId: 'gestion-adfinplus',
+      },
+      initOptions: {
+        onLoad: 'login-required',
+        checkLoginIframe: false,
+      }
+    });
+}
 
 @NgModule({
   declarations: [
@@ -24,7 +38,8 @@ import { PopupTrabajadoresComponent } from './trabajadores/popup-trabajadores/po
     TrabajadoresComponent,
     ProyectosComponent,
     RecursosComponent,
-    PopupTrabajadoresComponent
+    PopupTrabajadoresComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -32,10 +47,16 @@ import { PopupTrabajadoresComponent } from './trabajadores/popup-trabajadores/po
     ReactiveFormsModule,
     MaterialModule,
     HttpClientModule,
-    AppRoutingModule
-    
+    AppRoutingModule,
+    KeycloakAngularModule
+
   ],
-  providers: [],
+  providers: [ {
+    provide: APP_INITIALIZER,
+    useFactory: initializeKeycloak,
+    multi: true,
+    deps: [KeycloakService]
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,13 +1,28 @@
 <mat-sidenav-container>
-    <mat-sidenav-content>
-      <mat-toolbar color="primary">
-        <mat-toolbar-row>
-          <button mat-button routerLink="/empresa">Empresas</button>
-          <button mat-button routerLink="/trabajadores">Trabajadores</button>
-          <button mat-button routerLink="/proyectos">Proyectos</button>
-          <button mat-button routerLink="/recursos">Recursos</button>
-        </mat-toolbar-row>
-      </mat-toolbar>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
-  <router-outlet></router-outlet>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button mat-button routerLink="/empresa">Empresas</button>
+        <button mat-button routerLink="/trabajadores">Trabajadores</button>
+        <button mat-button routerLink="/proyectos">Proyectos</button>
+        <button mat-button routerLink="/recursos">Recursos</button>
+        <ng-container *ngIf="userProfile">
+          <table style="color: yellow; margin-left: auto; font-size: medium;" >
+            
+            <tr *ngIf="userProfile.username" >
+              <th>Usuario:</th>
+              <td>{{ userProfile.username }}</td>
+            </tr>
+
+            <tr *ngIf="userProfile.email">
+              <th scope="row">E-mail: </th>
+              <td>{{ userProfile.email }}</td>
+            </tr>
+
+          </table>
+        </ng-container>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<router-outlet></router-outlet>

@@ -5,22 +5,14 @@
       "nombre": "Consum"
     },
     {
-      "nombre": "Soy una Empresa SL",
+      "nombre": "Carrefour",
       "id": 4
-    },
-    {
-      "nombre": "Carre4",
-      "id": 5
-    },
-    {
-      "nombre": "hioijli",
-      "id": 6
     }
   ],
   "trabajador": [
     {
       "id": "20956136p",
-      "nombre": "Luis",
+      "nombre": "Luisa",
       "usuario": "luis.castano",
       "email_tnf": "luis.castano@thenetfirm.com",
       "apellidos": "Castaño",
@@ -28,13 +20,14 @@
       "gmail_tnf": "alexballestertnf@gmail.com"
     },
     {
+      "id": "sd",
       "nombre": "fgdf",
       "usuario": "dgfdg",
       "email_tnf": "fgdfgdfg",
       "apellidos": "gdfgdfgdfg",
       "password": "fdgdfgdfg",
       "gmail_tnf": "fdgfdgf",
-      "id": "-XKJzBy"
+      "IdEmpresa": "1"
     }
   ]
 }
