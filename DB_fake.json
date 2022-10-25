@@ -7,6 +7,14 @@
     {
       "nombre": "Carrefour",
       "id": 4
+    },
+    {
+      "id": 5,
+      "nombre": "Mercadona"
+    },
+    {
+      "nombre": "Alcampo",
+      "id": 6
     }
   ],
   "trabajador": [
@@ -28,6 +36,15 @@
       "password": "fdgdfgdfg",
       "gmail_tnf": "fdgfdgf",
       "IdEmpresa": "1"
+    },
+    {
+      "nombre": "a",
+      "usuario": "a",
+      "email_tnf": "a",
+      "apellidos": "a",
+      "password": "a",
+      "gmail_tnf": "a",
+      "id": "GiJZzg0"
     }
   ]
 }

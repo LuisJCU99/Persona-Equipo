@@ -1,0 +1,15 @@
+<mat-card>
+    <mat-card-content>
+        <h4>Asignar Empresa a un trabajador</h4>
+        <mat-form-field appearance="fill">
+            <mat-label>Empresas</mat-label>
+            <mat-select [(ngModel)]="selectedValue">
+                <mat-option *ngFor="let empresa of empresas" [value]="empresa">
+                    {{empresa.nombre}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <a mat-raised-button color="primary" style="margin: 2%" (click)="guardar()">Guardar</a>
+       <p>Empresa elegida: {{nombreEmpresa}}</p> 
+    </mat-card-content>
+</mat-card>

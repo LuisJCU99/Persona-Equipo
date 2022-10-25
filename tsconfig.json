@@ -21,7 +21,10 @@
     "typeRoots": ["node_modules/@types", "src/alertifytype.d.ts"],
     "lib": [
       "es2020",
-      "dom"
+      "dom", 
+      "es5", 
+      "es6",
+      "dom.iterable"
     ]
   },
   "angularCompilerOptions": {

@@ -12,6 +12,9 @@ import { MatSelectModule } from '@angular/material/select'
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -29,7 +32,9 @@ import {MatMenuModule} from '@angular/material/menu';
         MatSelectModule,
         MatToolbarModule,
         MatSidenavModule,
-        MatMenuModule
+        MatMenuModule,
+        MatIconModule,
+        FormsModule
     ]
 })
 export class MaterialModule { }

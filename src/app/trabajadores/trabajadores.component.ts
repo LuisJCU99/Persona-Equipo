@@ -8,6 +8,7 @@ import * as alertifyjs from 'alertifyjs';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
+import { PopupAsignarEmpresaComponent } from './popup-asignar-empresa/popup-asignar-empresa.component';
 
 @Component({
   selector: 'app-trabajadores',
@@ -27,7 +28,7 @@ export class TrabajadoresComponent implements OnInit {
     this.loadTrabajador();
   }
 
-  displayColumns: string[] = ["id", "nombre","apellidos","usuario", "email_tnf","password", "gmail_tnf", "action"];
+  displayColumns: string[] = ["id", "nombre","apellidos","usuario", "email_tnf","password", "gmail_tnf","nombreEmpresa", "action"];
 
   openPopup(id: any) {
     const popup =
@@ -45,6 +46,19 @@ export class TrabajadoresComponent implements OnInit {
     })
   }
 
+  asignarEmpresaPopup(id: any) {
+    //const popup =
+      this.dialog.open(PopupAsignarEmpresaComponent, {
+        width: '50%',
+        exitAnimationDuration: '500ms',
+        enterAnimationDuration: '500ms',
+        //necesito el id
+        data: {
+          id: id
+        }
+      });
+    }
+
   loadTrabajador() {
     this.api.getAllTrabajadores().subscribe(response => {
       this.trabajadorData = response;
@@ -57,7 +71,9 @@ export class TrabajadoresComponent implements OnInit {
   editTrabajador(id: any) {
     this.openPopup(id);
   }
-
+  asignarEmpresa(id:any){
+    this.asignarEmpresaPopup(id);
+  }
   deleteTrabajador(id: any) {
     alertifyjs.confirm("Eliminar", "¿Estás seguro de que deseas borrar el siguiente elemento?", () => {
       this.api.deleteTrabajadorById(id).subscribe(r => {
