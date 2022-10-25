@@ -28,7 +28,7 @@ export class TrabajadoresComponent implements OnInit {
     this.loadTrabajador();
   }
 
-  displayColumns: string[] = ["id", "nombre","apellidos","usuario", "email_tnf","password", "gmail_tnf","nombreEmpresa", "action"];
+  displayColumns: string[] = ["id", "nombre","apellidos","usuario", "email_tnf","password", "gmail_tnf","idEmpresa", "action"];
 
   openPopup(id: any) {
     const popup =

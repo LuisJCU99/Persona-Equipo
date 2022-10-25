@@ -19,32 +19,74 @@
   ],
   "trabajador": [
     {
-      "id": "20956136p",
-      "nombre": "Luisa",
-      "usuario": "luis.castano",
-      "email_tnf": "luis.castano@thenetfirm.com",
-      "apellidos": "Castaño",
-      "password": "20!LCastano#22",
-      "gmail_tnf": "alexballestertnf@gmail.com"
-    },
-    {
-      "id": "sd",
-      "nombre": "fgdf",
-      "usuario": "dgfdg",
-      "email_tnf": "fgdfgdfg",
-      "apellidos": "gdfgdfgdfg",
-      "password": "fdgdfgdfg",
-      "gmail_tnf": "fdgfdgf",
-      "IdEmpresa": "1"
-    },
-    {
+      "id": 1,
       "nombre": "a",
       "usuario": "a",
       "email_tnf": "a",
       "apellidos": "a",
       "password": "a",
       "gmail_tnf": "a",
-      "id": "GiJZzg0"
+      "idEmpresa": "4"
+    },
+    {
+      "nombre": "b",
+      "usuario": "b",
+      "email_tnf": "b",
+      "apellidos": "b",
+      "password": "b",
+      "gmail_tnf": "b",
+      "idEmpresa": "b",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "nombre": "c",
+      "usuario": "c",
+      "email_tnf": "c",
+      "apellidos": "c",
+      "password": "c",
+      "gmail_tnf": "c",
+      "idEmpresa": "5"
+    },
+    {
+      "nombre": "d",
+      "usuario": "d",
+      "email_tnf": "d",
+      "apellidos": "d",
+      "password": "d",
+      "gmail_tnf": "d",
+      "idEmpresa": "d",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "nombre": "e",
+      "usuario": "e",
+      "email_tnf": "e",
+      "apellidos": "e",
+      "password": "e",
+      "gmail_tnf": "e",
+      "idEmpresa": "f"
+    },
+    {
+      "nombre": "f",
+      "usuario": "f",
+      "email_tnf": "f",
+      "apellidos": "f",
+      "password": "f",
+      "gmail_tnf": "f",
+      "idEmpresa": "f",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "nombre": "z",
+      "usuario": "z",
+      "email_tnf": "z",
+      "apellidos": "z",
+      "password": "z",
+      "gmail_tnf": "z",
+      "idEmpresa": "5"
     }
   ]
 }

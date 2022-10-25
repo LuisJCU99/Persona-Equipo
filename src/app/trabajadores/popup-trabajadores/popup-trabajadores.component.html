@@ -1,7 +1,7 @@
 <mat-card>
     <mat-card-content>
         <h3>Trabajador</h3>
-        <form [formGroup]="trabajadorForm" (ngSubmit)="saveTrabajador()">
+        <form [formGroup]="trabajadorForm" (ngSubmit)="submitTrabajador()">
 
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Id</mat-label>
@@ -36,6 +36,11 @@
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Gmail TheNetFirm</mat-label>
                 <input matInput placeholder="Gmail TheNetFirm" formControlName="gmail_tnf">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>ID de la empresa</mat-label>
+                <input matInput placeholder="Id Empresa" formControlName="idEmpresa">
             </mat-form-field>
             <div class="example-button-row">
                 <button mat-raised-button color = "primary">Guardar</button> | <a mat-raised-button color = "accent" (click)="closePopup()">Cerrar</a>

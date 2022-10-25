@@ -1,4 +1,3 @@
-import { _getFocusedElementPierceShadowDom } from '@angular/cdk/platform';
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
@@ -12,6 +11,7 @@ import * as alertifyjs from 'alertifyjs';
 })
 export class PopupTrabajadoresComponent implements OnInit {
   editData: any;
+  existeEmpresa: boolean = false;
   constructor(private builder: FormBuilder, private dialog: MatDialog, private api: ApiService,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 
@@ -20,8 +20,11 @@ export class PopupTrabajadoresComponent implements OnInit {
     if (this.data.id != '' && this.data.id != null) {
       this.api.getTrabajadorById(this.data.id).subscribe(response => {
         this.editData = response;
-        this.trabajadorForm.setValue({ id: this.editData.id, nombre: this.editData.nombre,  usuario: this.editData.usuario, 
-          email_tnf: this.editData.email_tnf, apellidos: this.editData.apellidos, password: this.editData.password, gmail_tnf: this.editData.gmail_tnf })
+        this.trabajadorForm.setValue({
+          id: this.editData.id, nombre: this.editData.nombre, usuario: this.editData.usuario,
+          email_tnf: this.editData.email_tnf, apellidos: this.editData.apellidos, password: this.editData.password, gmail_tnf: this.editData.gmail_tnf,
+          idEmpresa: this.editData.idEmpresa
+        })
       });
     }
   }
@@ -32,27 +35,40 @@ export class PopupTrabajadoresComponent implements OnInit {
     email_tnf: this.builder.control('', Validators.required),
     apellidos: this.builder.control('', Validators.required),
     password: this.builder.control('', Validators.required),
-    gmail_tnf: this.builder.control('', Validators.required)
+    gmail_tnf: this.builder.control('', Validators.required),
+    idEmpresa: this.builder.control({ value: '', disabled: false })
 
   });
-
-  saveTrabajador() {
-    if (this.trabajadorForm.valid) {
-      const editid = this.trabajadorForm.getRawValue().id;
-      if (editid != '' && editid != null) {
-        this.api.updateTrabajador(editid, this.trabajadorForm.getRawValue()).subscribe(response => {
-          this.closePopup();
-          alertifyjs.success("¡Actualizado con éxito!")
-        });
-      } else {
-        this.api.createTrabajador(this.trabajadorForm.value).subscribe(response => {
-          this.closePopup();
-          alertifyjs.success("¡Los cambios se han guardado con éxito!")
-        });
+  submitTrabajador() {
+    this.api.getAllEmpresas().subscribe(empresas => {
+      for (var empresa in empresas) {
+        console.log(empresas[empresa].id);
+        if (empresas[empresa].id.toString() == this.trabajadorForm.controls.idEmpresa.value) {
+          this.existeEmpresa = true;
+          this.updateOrSaveTrabajador();
+          break;
+        }
       }
+      !this.existeEmpresa? alertifyjs.error("ERROR: No existen empresas con ese ID"): '';
+    })
+}
 
+updateOrSaveTrabajador(){
+  if (this.trabajadorForm.valid) {
+    const editid = this.trabajadorForm.getRawValue().id;
+    if (editid != '' && editid != null) {
+      this.api.updateTrabajador(editid, this.trabajadorForm.getRawValue()).subscribe(response => {
+        this.closePopup();
+        alertifyjs.success("¡Actualizado con éxito!")
+      });
+    } else {
+      this.api.createTrabajador(this.trabajadorForm.value).subscribe(response => {
+        this.closePopup();
+        alertifyjs.success("¡Los cambios se han guardado con éxito!")
+      });
     }
   }
+}
 
   closePopup() {
     this.dialog.closeAll();
