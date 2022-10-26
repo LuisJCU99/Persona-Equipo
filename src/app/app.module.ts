@@ -17,6 +17,7 @@ import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 import { PopupAsignarEmpresaComponent } from './trabajadores/popup-asignar-empresa/popup-asignar-empresa.component';
 import { PopupProyectosComponent } from './proyectos/popup-proyectos/popup-proyectos.component';
 import { PuestosComponent } from './proyectos/puestos/puestos.component';
+import { PopupPuestosComponent } from './proyectos/puestos/popup-puestos/popup-puestos.component';
 
 function initializeKeycloak(keycloak: KeycloakService) {
   return () =>
@@ -45,6 +46,7 @@ function initializeKeycloak(keycloak: KeycloakService) {
     PopupAsignarEmpresaComponent,
     PopupProyectosComponent,
     PuestosComponent,
+    PopupPuestosComponent,
 
   ],
   imports: [

@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Empresa } from "../models/empresa";
 import { Proyecto } from '../models/proyecto';
+import { Puesto } from '../models/Puesto';
 import { Trabajador } from '../models/trabajador';
 
 @Injectable({
@@ -51,7 +52,7 @@ export class ApiService {
   getAllProyectos(): Observable<Proyecto[]> {
     return this.http.get<Proyecto[]>(this.apiUrl + '/proyecto');
   }
-  createProyectos(proyectoData: any) {
+  createProyecto(proyectoData: any) {
     return this.http.post(this.apiUrl + '/proyecto', proyectoData)
   }
   getProyectoById(id: any): Observable<Proyecto[]> {
@@ -63,6 +64,23 @@ export class ApiService {
   updateProyecto(id: any, proyectoData: any) {
     return this.http.put(this.apiUrl + '/proyecto' + '/' + id, proyectoData)
   }
+
+  getAllPuestos(): Observable<Puesto[]> {
+    return this.http.get<Puesto[]>(this.apiUrl + '/puesto');
+  }
+  createPuesto(puestoData: any) {
+    return this.http.post(this.apiUrl + '/puesto', puestoData)
+  }
+  getPuestoById(id: any): Observable<Puesto[]> {
+    return this.http.get<Puesto[]>(this.apiUrl + '/puesto' + '/' + id);
+  }
+  deletePuestoById(id: any) {
+    return this.http.delete(this.apiUrl + '/puesto' + '/' + id);
+  }
+  updatePuesto(id: any, puestoData: any) {
+    return this.http.put(this.apiUrl + '/puesto' + '/' + id, puestoData)
+  }
+
 
 
 

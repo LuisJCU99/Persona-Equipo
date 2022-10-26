@@ -55,7 +55,7 @@ export class PopupProyectosComponent implements OnInit {
           alertifyjs.success("¡Actualizado con éxito!")
         });
       } else {
-        this.api.createProyectos(this.proyectoForm.value).subscribe(response => {
+        this.api.createProyecto(this.proyectoForm.value).subscribe(response => {
           this.closePopup();
           alertifyjs.success("¡Los cambios se han guardado con éxito!")
         });

@@ -110,5 +110,15 @@
       "nombre": "h",
       "idEmpresa": "4"
     }
+  ],
+  "puesto": [
+    {
+      "id": 1,
+      "tecnologia": "ImagineTeens"
+    },
+    {
+      "id": 1,
+      "tecnologia": "xop"
+    }
   ]
 }
