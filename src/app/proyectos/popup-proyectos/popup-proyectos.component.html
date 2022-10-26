@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-content>
+        <h3>Proyecto</h3>
+        <form [formGroup]="proyectoForm" (ngSubmit)="submitProyecto()">
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Id</mat-label>
+                <input matInput placeholder="Id de la empresa" formControlName="id">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Nombre del proyecto</mat-label>
+                <input matInput placeholder="Nombre" formControlName="nombre">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>ID del proyecto</mat-label>
+                <input matInput placeholder="idEmpresa" formControlName="idEmpresa">
+            </mat-form-field>
+            <div class="example-button-row">
+                <button mat-raised-button color = "primary">Guardar</button> | <a mat-raised-button color = "accent" (click)="closePopup()">Cerrar</a>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

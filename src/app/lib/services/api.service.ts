@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Empresa } from "../models/empresa";
+import { Proyecto } from '../models/proyecto';
 import { Trabajador } from '../models/trabajador';
 
 @Injectable({
@@ -46,6 +47,25 @@ export class ApiService {
   updateTrabajador(id: any, trabajadorData: any) {
     return this.http.put(this.apiUrl + '/trabajador' + '/' + id, trabajadorData)
   }
+
+  getAllProyectos(): Observable<Proyecto[]> {
+    return this.http.get<Proyecto[]>(this.apiUrl + '/proyecto');
+  }
+  createProyectos(proyectoData: any) {
+    return this.http.post(this.apiUrl + '/proyecto', proyectoData)
+  }
+  getProyectoById(id: any): Observable<Proyecto[]> {
+    return this.http.get<Proyecto[]>(this.apiUrl + '/proyecto' + '/' + id);
+  }
+  deleteProyectoById(id: any) {
+    return this.http.delete(this.apiUrl + '/proyecto' + '/' + id);
+  }
+  updateProyecto(id: any, proyectoData: any) {
+    return this.http.put(this.apiUrl + '/proyecto' + '/' + id, proyectoData)
+  }
+
+
+
 
 
 }

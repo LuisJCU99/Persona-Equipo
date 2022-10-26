@@ -45,7 +45,7 @@ export class PopupTrabajadoresComponent implements OnInit {
         console.log(empresas[empresa].id);
         if (empresas[empresa].id.toString() == this.trabajadorForm.controls.idEmpresa.value) {
           this.existeEmpresa = true;
-          this.updateOrSaveTrabajador();
+          this.SaveTrabajador();
           break;
         }
       }
@@ -53,7 +53,7 @@ export class PopupTrabajadoresComponent implements OnInit {
     })
 }
 
-updateOrSaveTrabajador(){
+SaveTrabajador(){
   if (this.trabajadorForm.valid) {
     const editid = this.trabajadorForm.getRawValue().id;
     if (editid != '' && editid != null) {
