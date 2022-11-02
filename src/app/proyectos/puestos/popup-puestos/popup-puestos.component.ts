@@ -13,6 +13,7 @@ import { PasarProyectoService } from 'src/app/lib/services/pasar-proyecto.servic
 })
 export class PopupPuestosComponent implements OnInit {
   editData: any;
+  existeTrabajador!: boolean;
   constructor(private builder: FormBuilder, private dialog: MatDialog, private api: ApiService, public pasarProyecto: PasarProyectoService,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 
@@ -22,7 +23,10 @@ export class PopupPuestosComponent implements OnInit {
     if (this.data.id != '' && this.data.id != null) {
       this.api.getPuestoById(this.data.id).subscribe(response => {
         this.editData = response;
-        this.puestoForm.setValue({ id: this.editData.id, tecnologia: this.editData.tecnologia, funcion: this.editData.funcion, idProyecto: this.editData.idProyecto })
+        this.puestoForm.setValue({
+          id: this.editData.id, tecnologia: this.editData.tecnologia, funcion: this.editData.funcion,
+          idProyecto: this.editData.idProyecto, idTrabajador: this.editData.idTrabajador
+        })
       });
     }
   }
@@ -30,11 +34,27 @@ export class PopupPuestosComponent implements OnInit {
     id: this.builder.control({ value: '', disabled: true }),
     tecnologia: this.builder.control('', Validators.required),
     funcion: this.builder.control('', Validators.required),
-    idProyecto: this.builder.control(this.pasarProyecto.proyecto.id, Validators.required)
+    idTrabajador: this.builder.control('', Validators.required),
+    idProyecto: this.builder.control(this.pasarProyecto.proyecto.id, Validators.required),
+
 
   });
 
-  savePuesto() {
+  submitPuesto() {
+    this.api.getAllTrabajadores().subscribe(trabajadores => {
+      for (var trabajador in trabajadores) {
+        console.log(trabajadores[trabajador].id);
+        if (trabajadores[trabajador].id.toString() == this.puestoForm.controls.idTrabajador.value) {
+          this.existeTrabajador = true;
+          this.SavePuesto();
+          break;
+        }
+      }
+      !this.existeTrabajador ? alertifyjs.error("ERROR: No existen trabajadores con ese ID") : '';
+    })
+  }
+
+  SavePuesto() {
     if (this.puestoForm.valid) {
       const editid = this.puestoForm.getRawValue().id;
       if (editid != '' && editid != null) {
@@ -48,10 +68,8 @@ export class PopupPuestosComponent implements OnInit {
           alertifyjs.success("¡Los cambios se han guardado con éxito!")
         });
       }
-
     }
   }
-
   closePopup() {
     this.dialog.closeAll();
 

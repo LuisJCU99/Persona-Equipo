@@ -28,7 +28,7 @@ export class TrabajadoresComponent implements OnInit {
     this.loadTrabajador();
   }
 
-  displayColumns: string[] = ["id", "nombre","apellidos","usuario", "email_tnf","password", "gmail_tnf","idEmpresa", "action"];
+  displayColumns: string[] = ["id", "nombre", "apellidos", "usuario", "email_tnf", "password", "gmail_tnf", "idEmpresa", "action"];
 
   openPopup(id: any) {
     const popup =
@@ -48,16 +48,16 @@ export class TrabajadoresComponent implements OnInit {
 
   asignarEmpresaPopup(id: any) {
     //const popup =
-      this.dialog.open(PopupAsignarEmpresaComponent, {
-        width: '50%',
-        exitAnimationDuration: '500ms',
-        enterAnimationDuration: '500ms',
-        //necesito el id
-        data: {
-          id: id
-        }
-      });
-    }
+    this.dialog.open(PopupAsignarEmpresaComponent, {
+      width: '50%',
+      exitAnimationDuration: '500ms',
+      enterAnimationDuration: '500ms',
+      //necesito el id
+      data: {
+        id: id
+      }
+    });
+  }
 
   loadTrabajador() {
     this.api.getAllTrabajadores().subscribe(response => {
@@ -71,7 +71,7 @@ export class TrabajadoresComponent implements OnInit {
   editTrabajador(id: any) {
     this.openPopup(id);
   }
-  asignarEmpresa(id:any){
+  asignarEmpresa(id: any) {
     this.asignarEmpresaPopup(id);
   }
   deleteTrabajador(id: any) {

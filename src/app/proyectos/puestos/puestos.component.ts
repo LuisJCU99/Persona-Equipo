@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormControl } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Puesto } from '../../lib/models/Puesto';
 import { ApiService } from '../../lib/services/api.service';
@@ -9,7 +8,6 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { PopupPuestosComponent } from './popup-puestos/popup-puestos.component';
 import { Router } from '@angular/router';
-import { Proyecto } from 'src/app/lib/models/proyecto';
 import { PasarProyectoService } from 'src/app/lib/services/pasar-proyecto.service';
 
 @Component({
@@ -33,7 +31,7 @@ export class PuestosComponent implements OnInit {
 
   }
 
-  displayColumns: string[] = ["id", "tecnologia", "funcion", "action"];
+  displayColumns: string[] = ["id", "idTrabajador", "tecnologia", "funcion", "action"];
 
   openPopup(id: any) {
     const popup =
@@ -67,7 +65,6 @@ export class PuestosComponent implements OnInit {
       this.finalData = new MatTableDataSource<Puesto>(this.puestosByProyecto);
       this.finalData.paginator = this._paginator;
       this.finalData.sort = this._sort;
-
     })
   }
 

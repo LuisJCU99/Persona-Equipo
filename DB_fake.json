@@ -87,6 +87,20 @@
       "password": "z",
       "gmail_tnf": "z",
       "idEmpresa": "5"
+    },
+    {
+      "tecnologia": "c",
+      "funcion": "c",
+      "idTrabajador": "4",
+      "idProyecto": 1,
+      "id": 8
+    },
+    {
+      "tecnologia": "a",
+      "funcion": "a",
+      "idTrabajador": "1",
+      "idProyecto": 3,
+      "id": 9
     }
   ],
   "proyecto": [
@@ -108,28 +122,31 @@
   ],
   "puesto": [
     {
-      "tecnologia": "hola",
-      "funcion": "hola",
-      "id": 3,
-      "idProyecto": 1
-    },
-    {
-      "tecnologia": "e",
-      "funcion": "e",
-      "idProyecto": "1",
-      "id": 4
-    },
-    {
       "tecnologia": "y",
       "funcion": "y",
       "idProyecto": "2",
       "id": 5
     },
     {
-      "tecnologia": "5",
-      "funcion": "5",
-      "idProyecto": "1",
+      "tecnologia": "d",
+      "funcion": "d",
+      "idTrabajador": "3",
+      "idProyecto": 3,
       "id": 6
+    },
+    {
+      "tecnologia": "a",
+      "funcion": "a",
+      "idTrabajador": "1",
+      "idProyecto": 1,
+      "id": 7
+    },
+    {
+      "tecnologia": "b",
+      "funcion": "b",
+      "idTrabajador": "2",
+      "idProyecto": 1,
+      "id": 8
     }
   ]
 }

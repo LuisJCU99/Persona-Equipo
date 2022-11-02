@@ -1,7 +1,7 @@
 <mat-card>
     <mat-card-content>
         <h3>Puestos</h3>
-        <form [formGroup]="puestoForm" (ngSubmit)="savePuesto()">
+        <form [formGroup]="puestoForm" (ngSubmit)="submitPuesto()">
 
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Id</mat-label>
@@ -21,6 +21,11 @@
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>idProyecto</mat-label>
                 <input matInput placeholder="idProyecto" formControlName="idProyecto">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>idTrabajador</mat-label>
+                <input matInput placeholder="idTrabajador" formControlName="idTrabajador">
             </mat-form-field>
             
 

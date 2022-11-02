@@ -13,6 +13,11 @@
                 <td mat-cell *matCellDef="let element"> {{element.id}} </td>
             </ng-container>
 
+            <ng-container matColumnDef="idTrabajador">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> idTrabajador </th>
+                <td mat-cell *matCellDef="let element"> {{element.idTrabajador}} </td>
+            </ng-container>
+
             <ng-container matColumnDef="tecnologia">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Tecnología </th>
                 <td mat-cell *matCellDef="let element"> {{element.tecnologia}} </td>
