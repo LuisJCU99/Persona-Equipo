@@ -8,6 +8,10 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { PopupPuestosComponent } from './popup-puestos/popup-puestos.component';
+import { Router } from '@angular/router';
+import { Proyecto } from 'src/app/lib/models/proyecto';
+import { DataService } from 'src/app/lib/services/data.service';
+import { PasarProyectoService } from 'src/app/lib/services/pasar-proyecto.service';
 
 @Component({
   selector: 'app-puestos',
@@ -16,18 +20,23 @@ import { PopupPuestosComponent } from './popup-puestos/popup-puestos.component';
 })
 export class PuestosComponent implements OnInit {
 
-  constructor(private dialog: MatDialog, private api: ApiService) { }
+  constructor(private dialog: MatDialog, private api: ApiService, private router: Router, public pasarProyecto: PasarProyectoService) { }
   @ViewChild(MatPaginator) _paginator!: MatPaginator;
   @ViewChild(MatSort) _sort!: MatSort;
 
-  puestoData!: Puesto[];
+  puestos!: Puesto[];
+  puestosByProyecto: Array<Puesto> = [];
   finalData: any;
+  public proyecto: Array<any> = [];
+
+
 
   ngOnInit(): void {
     this.loadPuesto();
+
   }
 
-  displayColumns: string[] = ["id", "tecnologia", "action"];
+  displayColumns: string[] = ["id", "tecnologia", "funcion", "action"];
 
   openPopup(id: any) {
     const popup =
@@ -45,12 +54,23 @@ export class PuestosComponent implements OnInit {
     })
   }
 
+  // Función que pinta los diferentes puestos filtrados por proyecto comparando el id del Proyecto.
   loadPuesto() {
     this.api.getAllPuestos().subscribe(response => {
-      this.puestoData = response;
-      this.finalData = new MatTableDataSource<Puesto>(this.puestoData);
+      this.puestosByProyecto = [];
+      this.puestos = response;
+
+      for (var puesto of this.puestos) {
+        if (this.pasarProyecto.proyecto.id == puesto.idProyecto) {
+          this.puestosByProyecto.push(puesto);
+          console.log('yo por ahi no paso')
+        }
+      }
+      //this.finalData = new MatTableDataSource<Puesto>(this.puestos);
+      this.finalData = new MatTableDataSource<Puesto>(this.puestosByProyecto);
       this.finalData.paginator = this._paginator;
       this.finalData.sort = this._sort;
+
     })
   }
 
@@ -66,4 +86,5 @@ export class PuestosComponent implements OnInit {
     }, function () {
     })
   }
+
 }

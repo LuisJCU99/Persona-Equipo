@@ -5,13 +5,25 @@
 
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Id</mat-label>
-                <input matInput placeholder="Id de la empresa" formControlName="id">
+                <input matInput placeholder="Id Proyecto" formControlName="id">
             </mat-form-field>
-            <br>
+
             <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>Nombre de la empresa</mat-label>
-                <input matInput placeholder="Nombre" formControlName="nombre">
+                <mat-label>Tecnología</mat-label>
+                <input matInput placeholder="Tecnologia" formControlName="tecnologia">
             </mat-form-field>
+           
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Función</mat-label>
+                <input matInput placeholder="funcion" formControlName="funcion">
+            </mat-form-field>
+             
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>idProyecto</mat-label>
+                <input matInput placeholder="idProyecto" formControlName="idProyecto">
+            </mat-form-field>
+            
+
             <div class="example-button-row">
                 <button mat-raised-button color = "primary">Guardar</button> | <a mat-raised-button color = "accent" (click)="closePopup()">Cerrar</a>
             </div>

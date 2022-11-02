@@ -16,7 +16,7 @@ export class PopupComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(): void {
-    //Si hay id en los campos del form de la ventana modal, coge la empresa seleccionada por ID, y con los datos cogidos en el response del subscribe, me los seteas en los campos del form 
+
     if (this.data.id != '' && this.data.id != null) {
       this.api.getEmpresaById(this.data.id).subscribe(response => {
         this.editData = response;

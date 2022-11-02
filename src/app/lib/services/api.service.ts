@@ -81,10 +81,5 @@ export class ApiService {
     return this.http.put(this.apiUrl + '/puesto' + '/' + id, puestoData)
   }
 
-
-
-
-
-
 }
 

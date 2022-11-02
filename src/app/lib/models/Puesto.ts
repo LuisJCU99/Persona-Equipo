@@ -1,7 +1,7 @@
 export interface Puesto {
     id: number,
     tecnologia: string,
-    funcion: number,
+    funcion: string,
     idProyecto: number,
     idTrabajador: number
 }

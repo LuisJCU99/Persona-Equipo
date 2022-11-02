@@ -8,6 +8,8 @@ import * as alertifyjs from 'alertifyjs';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
+import { DataService } from '../lib/services/data.service';
+import { PasarProyectoService } from '../lib/services/pasar-proyecto.service';
 
 @Component({
   selector: 'app-proyectos',
@@ -16,15 +18,19 @@ import { MatSort } from '@angular/material/sort';
 })
 export class ProyectosComponent implements OnInit {
 
-  constructor(private dialog: MatDialog, private api: ApiService) { }
+  constructor(private dialog: MatDialog, private api: ApiService, private pasarProyecto: PasarProyectoService) { }
   @ViewChild(MatPaginator) _paginator!: MatPaginator;
   @ViewChild(MatSort) _sort!: MatSort;
 
   proyectoData!: Proyecto[];
   finalData: any;
+  // element!: Proyecto;
+  mensaje!: string;
+  nombreUsuario: String = "Luis";
 
   ngOnInit(): void {
     this.loadProyecto();
+
   }
 
   displayColumns: string[] = ["id", "nombre", "idEmpresa", "action"];
@@ -65,5 +71,8 @@ export class ProyectosComponent implements OnInit {
       });
     }, function () {
     })
+  }
+  verData(element: Proyecto) {
+    this.pasarProyecto.proyecto = element
   }
 }

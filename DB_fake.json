@@ -87,16 +87,6 @@
       "password": "z",
       "gmail_tnf": "z",
       "idEmpresa": "5"
-    },
-    {
-      "nombre": "y",
-      "usuario": "y",
-      "email_tnf": "y",
-      "apellidos": "y",
-      "password": "y",
-      "gmail_tnf": "y",
-      "idEmpresa": "4",
-      "id": 8
     }
   ],
   "proyecto": [
@@ -109,16 +99,37 @@
       "id": 2,
       "nombre": "h",
       "idEmpresa": "4"
+    },
+    {
+      "nombre": "AdfinPlus",
+      "idEmpresa": "3",
+      "id": 3
     }
   ],
   "puesto": [
     {
-      "id": 1,
-      "tecnologia": "ImagineTeens"
+      "tecnologia": "hola",
+      "funcion": "hola",
+      "id": 3,
+      "idProyecto": 1
     },
     {
-      "id": 1,
-      "tecnologia": "xop"
+      "tecnologia": "e",
+      "funcion": "e",
+      "idProyecto": "1",
+      "id": 4
+    },
+    {
+      "tecnologia": "y",
+      "funcion": "y",
+      "idProyecto": "2",
+      "id": 5
+    },
+    {
+      "tecnologia": "5",
+      "funcion": "5",
+      "idProyecto": "1",
+      "id": 6
     }
   ]
 }
