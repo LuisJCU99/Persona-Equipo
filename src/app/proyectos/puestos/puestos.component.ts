@@ -10,7 +10,6 @@ import { MatSort } from '@angular/material/sort';
 import { PopupPuestosComponent } from './popup-puestos/popup-puestos.component';
 import { Router } from '@angular/router';
 import { Proyecto } from 'src/app/lib/models/proyecto';
-import { DataService } from 'src/app/lib/services/data.service';
 import { PasarProyectoService } from 'src/app/lib/services/pasar-proyecto.service';
 
 @Component({
@@ -27,8 +26,6 @@ export class PuestosComponent implements OnInit {
   puestos!: Puesto[];
   puestosByProyecto: Array<Puesto> = [];
   finalData: any;
-  public proyecto: Array<any> = [];
-
 
 
   ngOnInit(): void {

@@ -8,7 +8,6 @@ import * as alertifyjs from 'alertifyjs';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
-import { DataService } from '../lib/services/data.service';
 import { PasarProyectoService } from '../lib/services/pasar-proyecto.service';
 
 @Component({
@@ -25,8 +24,6 @@ export class ProyectosComponent implements OnInit {
   proyectoData!: Proyecto[];
   finalData: any;
   // element!: Proyecto;
-  mensaje!: string;
-  nombreUsuario: String = "Luis";
 
   ngOnInit(): void {
     this.loadProyecto();
