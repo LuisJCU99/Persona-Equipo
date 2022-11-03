@@ -63,7 +63,7 @@ export class ProyectosComponent implements OnInit {
 
   deleteProyecto(id: any) {
     alertifyjs.confirm("Eliminar", "¿Estás seguro de que deseas borrar el siguiente elemento?", () => {
-      this.api.deleteEmpresaById(id).subscribe(r => {
+      this.api.deleteProyectoById(id).subscribe(r => {
         this.loadProyecto();
       });
     }, function () {

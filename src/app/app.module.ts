@@ -18,6 +18,11 @@ import { PopupAsignarEmpresaComponent } from './trabajadores/popup-asignar-empre
 import { PopupProyectosComponent } from './proyectos/popup-proyectos/popup-proyectos.component';
 import { PuestosComponent } from './proyectos/puestos/puestos.component';
 import { PopupPuestosComponent } from './proyectos/puestos/popup-puestos/popup-puestos.component';
+import { OrdenadoresComponent } from './recursos/ordenadores/ordenadores.component';
+import { SmartphonesComponent } from './recursos/smartphones/smartphones.component';
+import { ExtensionesComponent } from './recursos/extensiones/extensiones.component';
+import { UsuariosCaixaComponent } from './recursos/usuarios-caixa/usuarios-caixa.component';
+import { PopupOrdenadoresComponent } from './recursos/ordenadores/popup-ordenadores/popup-ordenadores.component';
 
 function initializeKeycloak(keycloak: KeycloakService) {
   return () =>
@@ -47,6 +52,11 @@ function initializeKeycloak(keycloak: KeycloakService) {
     PopupProyectosComponent,
     PuestosComponent,
     PopupPuestosComponent,
+    OrdenadoresComponent,
+    SmartphonesComponent,
+    ExtensionesComponent,
+    UsuariosCaixaComponent,
+    PopupOrdenadoresComponent,
 
   ],
   imports: [

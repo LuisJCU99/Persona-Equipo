@@ -3,8 +3,10 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Empresa } from "../models/empresa";
 import { Proyecto } from '../models/proyecto';
-import { Puesto } from '../models/Puesto';
+import { Puesto } from '../models/puesto';
 import { Trabajador } from '../models/trabajador';
+import { Ordenador } from '../models/recursos/ordenador';
+
 
 @Injectable({
   providedIn: 'root'
@@ -14,11 +16,10 @@ export class ApiService {
   constructor(private http: HttpClient) { }
   apiUrl = 'http://localhost:3000';
 
-  //Hace un return que me da objetos de tipo Empresa, cogidos de la url this.apiUrl
+  //EMPRESAS
   getAllEmpresas(): Observable<Empresa[]> {
     return this.http.get<Empresa[]>(this.apiUrl + '/empresa');
   }
-  //Función a la que le paso datos de tipo Empresa, para hacer un return en el que hago POST(url de la api, dato que posteo) 
   createEmpresa(empresaData: any) {
     return this.http.post(this.apiUrl + '/empresa', empresaData)
   }
@@ -32,7 +33,7 @@ export class ApiService {
     return this.http.put(this.apiUrl + '/empresa' + '/' + id, empresaData)
   }
 
-  
+  //TRABAJADORES 
   getAllTrabajadores(): Observable<Trabajador[]> {
     return this.http.get<Trabajador[]>(this.apiUrl + '/trabajador');
   }
@@ -49,6 +50,7 @@ export class ApiService {
     return this.http.put(this.apiUrl + '/trabajador' + '/' + id, trabajadorData)
   }
 
+  //PROYECTOS
   getAllProyectos(): Observable<Proyecto[]> {
     return this.http.get<Proyecto[]>(this.apiUrl + '/proyecto');
   }
@@ -65,6 +67,7 @@ export class ApiService {
     return this.http.put(this.apiUrl + '/proyecto' + '/' + id, proyectoData)
   }
 
+  //PUESTOS
   getAllPuestos(): Observable<Puesto[]> {
     return this.http.get<Puesto[]>(this.apiUrl + '/puesto');
   }
@@ -81,5 +84,21 @@ export class ApiService {
     return this.http.put(this.apiUrl + '/puesto' + '/' + id, puestoData)
   }
 
+  //ORDENADORES
+  getAllOrdenadores(): Observable<Ordenador[]> {
+    return this.http.get<Ordenador[]>(this.apiUrl + '/ordenador');
+  }
+  createOrdenador(ordenadorData: any) {
+    return this.http.post(this.apiUrl + '/ordenador', ordenadorData)
+  }
+  getOrdenadorById(id: any): Observable<Ordenador[]> {
+    return this.http.get<Ordenador[]>(this.apiUrl + '/ordenador' + '/' + id);
+  }
+  deleteOrdenadorById(id: any) {
+    return this.http.delete(this.apiUrl + '/ordenador' + '/' + id);
+  }
+  updateOrdenador(id: any, ordenadorData: any) {
+    return this.http.put(this.apiUrl + '/ordenador' + '/' + id, ordenadorData)
+  }
 }
 

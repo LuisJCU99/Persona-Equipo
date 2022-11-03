@@ -1,123 +1,91 @@
 {
   "empresa": [
     {
-      "id": 3,
-      "nombre": "Consum"
+      "nombre": "The Net Firm",
+      "id": 1
     },
     {
-      "nombre": "Carrefour",
-      "id": 4
-    },
-    {
-      "id": 5,
-      "nombre": "Mercadona"
-    },
-    {
-      "nombre": "Alcampo",
-      "id": 6
+      "nombre": "AdFinPlus",
+      "id": 2
     }
   ],
   "trabajador": [
     {
-      "id": 1,
-      "nombre": "a",
-      "usuario": "a",
-      "email_tnf": "a",
-      "apellidos": "a",
-      "password": "a",
-      "gmail_tnf": "a",
-      "idEmpresa": "4"
+      "nombre": "Alejandro",
+      "usuario": "alejandro.ballester",
+      "email_tnf": "alejandro.ballester@thenetfirm.com",
+      "apellidos": "Ballester",
+      "password": "no lo sé",
+      "gmail_tnf": "alexballestertnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 1
     },
     {
-      "nombre": "b",
-      "usuario": "b",
-      "email_tnf": "b",
-      "apellidos": "b",
-      "password": "b",
-      "gmail_tnf": "b",
-      "idEmpresa": "b",
+      "nombre": "Beni",
+      "usuario": "beni.vaschi",
+      "email_tnf": "beni.vaschi@thenetfirm.com",
+      "apellidos": "Vaschi",
+      "password": "no sé",
+      "gmail_tnf": "benivaschitnf@gmail.com",
+      "idEmpresa": "1",
       "id": 2
     },
     {
-      "id": 3,
-      "nombre": "c",
-      "usuario": "c",
-      "email_tnf": "c",
-      "apellidos": "c",
-      "password": "c",
-      "gmail_tnf": "c",
-      "idEmpresa": "5"
+      "nombre": "Victor",
+      "usuario": "victor.lafuente",
+      "email_tnf": "victor.lafuente@thenetfirm.com",
+      "apellidos": "Lafuente",
+      "password": "no sé",
+      "gmail_tnf": "victorlafuentetnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 3
     },
     {
-      "nombre": "d",
-      "usuario": "d",
-      "email_tnf": "d",
-      "apellidos": "d",
-      "password": "d",
-      "gmail_tnf": "d",
-      "idEmpresa": "d",
+      "nombre": "Jorge",
+      "usuario": "jorge.lengua",
+      "email_tnf": "jorge.lengua@thenetfirm.com",
+      "apellidos": "Lengua",
+      "password": "no sé",
+      "gmail_tnf": "j.lengua.tnf@gmail.com",
+      "idEmpresa": "1",
       "id": 4
     },
     {
-      "id": 5,
-      "nombre": "e",
-      "usuario": "e",
-      "email_tnf": "e",
-      "apellidos": "e",
-      "password": "e",
-      "gmail_tnf": "e",
-      "idEmpresa": "f"
+      "nombre": "Farid",
+      "usuario": "farid.zuniga",
+      "email_tnf": "farid.zuniga@thenetfirm.com",
+      "apellidos": "Zúñiga",
+      "password": "no sé",
+      "gmail_tnf": "f.zuniga.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 5
     },
     {
-      "id": 6,
-      "nombre": "f",
-      "usuario": "f",
-      "email_tnf": "f",
-      "apellidos": "f",
-      "password": "f",
-      "gmail_tnf": "f",
-      "idEmpresa": "3"
+      "nombre": "Rubén",
+      "usuario": "ruben.esteve",
+      "email_tnf": "ruben.esteve@thenetfirm.com",
+      "apellidos": "Esteve",
+      "password": "no sé",
+      "gmail_tnf": "ruben.esteve.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 6
     },
     {
-      "id": 7,
-      "nombre": "z",
-      "usuario": "z",
-      "email_tnf": "z",
-      "apellidos": "z",
-      "password": "z",
-      "gmail_tnf": "z",
-      "idEmpresa": "5"
-    },
-    {
-      "tecnologia": "c",
-      "funcion": "c",
-      "idTrabajador": "4",
-      "idProyecto": 1,
-      "id": 8
-    },
-    {
-      "tecnologia": "a",
-      "funcion": "a",
-      "idTrabajador": "1",
-      "idProyecto": 3,
-      "id": 9
+      "nombre": "Javier",
+      "usuario": "javier.bachero",
+      "email_tnf": "javier.bachero@thenetfirm.com",
+      "apellidos": "Bachero",
+      "password": "no sé",
+      "gmail_tnf": "javierbacherotnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 7
     }
   ],
   "proyecto": [
     {
-      "id": 1,
-      "nombre": "ImagineTeens",
-      "idEmpresa": "3"
-    },
-    {
-      "id": 2,
-      "nombre": "h",
-      "idEmpresa": "4"
-    },
-    {
-      "nombre": "AdfinPlus",
-      "idEmpresa": "3",
-      "id": 3
+      "nombre": "AppCbk",
+      "idEmpresa": "1",
+      "id": 1
     }
   ],
   "puesto": [
@@ -135,18 +103,51 @@
       "id": 6
     },
     {
-      "tecnologia": "a",
-      "funcion": "a",
+      "tecnologia": "Android",
+      "funcion": "Push",
       "idTrabajador": "1",
       "idProyecto": 1,
       "id": 7
     },
     {
-      "tecnologia": "b",
-      "funcion": "b",
+      "tecnologia": "Android",
+      "funcion": "Login",
       "idTrabajador": "2",
       "idProyecto": 1,
       "id": 8
+    },
+    {
+      "tecnologia": "Android",
+      "funcion": "Push",
+      "idTrabajador": "3",
+      "idProyecto": 1,
+      "id": 9
     }
-  ]
+  ],
+  "ordenador": [
+    {     
+        "id": 1,
+        "idOrdenador": "string",
+        "marca": "string",
+        "modelo": "string",
+        "procesador": "string",
+        "ram": "string",
+        "espacio": "string",
+        "ip_fija_oficina": "string",
+        "idEmpresa": 1,
+        "idTrabajador": 1
+      },
+      {
+        "id": 2,
+        "idOrdenador": "string",
+        "marca": "string",
+        "modelo": "string",
+        "procesador": "string",
+        "ram": "string",
+        "espacio": "string",
+        "ip_fija_oficina": "string",
+        "idEmpresa": 1,
+        "idTrabajador": 1
+      }
+    ]
 }

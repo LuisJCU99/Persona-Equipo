@@ -14,6 +14,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 
 
@@ -34,7 +36,9 @@ import { FormsModule } from '@angular/forms';
         MatSidenavModule,
         MatMenuModule,
         MatIconModule,
-        FormsModule
+        FormsModule,
+        MatTabsModule
+
     ]
 })
 export class MaterialModule { }

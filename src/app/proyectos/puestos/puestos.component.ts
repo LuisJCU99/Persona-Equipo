@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Puesto } from '../../lib/models/Puesto';
+import { Puesto } from '../../lib/models/puesto';
 import { ApiService } from '../../lib/services/api.service';
 import * as alertifyjs from 'alertifyjs';
 import { MatTableDataSource } from '@angular/material/table';
