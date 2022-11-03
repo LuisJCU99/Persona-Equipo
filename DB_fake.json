@@ -125,29 +125,29 @@
     }
   ],
   "ordenador": [
-    {     
-        "id": 1,
-        "idOrdenador": "string",
-        "marca": "string",
-        "modelo": "string",
-        "procesador": "string",
-        "ram": "string",
-        "espacio": "string",
-        "ip_fija_oficina": "string",
-        "idEmpresa": 1,
-        "idTrabajador": 1
-      },
-      {
-        "id": 2,
-        "idOrdenador": "string",
-        "marca": "string",
-        "modelo": "string",
-        "procesador": "string",
-        "ram": "string",
-        "espacio": "string",
-        "ip_fija_oficina": "string",
-        "idEmpresa": 1,
-        "idTrabajador": 1
-      }
-    ]
+    {
+      "id": 1,
+      "idOrdenador": "string",
+      "marca": "string",
+      "modelo": "string",
+      "procesador": "string",
+      "ram": "string",
+      "espacio": "string",
+      "ip_fija_oficina": "string",
+      "idEmpresa": 1,
+      "idTrabajador": 1
+    },
+    {
+      "id": 2,
+      "idOrdenador": "string",
+      "marca": "string",
+      "modelo": "string",
+      "procesador": "string",
+      "ram": "string",
+      "espacio": "string",
+      "ip_fija_oficina": "string",
+      "idEmpresa": 1,
+      "idTrabajador": 1
+    }
+  ]
 }

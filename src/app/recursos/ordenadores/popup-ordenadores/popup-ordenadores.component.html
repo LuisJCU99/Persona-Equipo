@@ -1,1 +1,51 @@
-<p>popup-ordenadores works!</p>
+<mat-card>
+    <mat-card-content>
+        <h3>Ordenador:</h3>
+        <form [formGroup]="ordenadorForm" (ngSubmit)="saveOrdenador()">
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Id</mat-label>
+                <input matInput placeholder="Id de la empresa" formControlName="id">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>idOrdenador</mat-label>
+                <input matInput placeholder="idOrdenador" formControlName="idOrdenador">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Marca</mat-label>
+                <input matInput placeholder="marca" formControlName="marca">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Modelo</mat-label>
+                <input matInput placeholder="modelo" formControlName="modelo">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Procesador</mat-label>
+                <input matInput placeholder="procesador" formControlName="procesador">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>ram</mat-label>
+                <input matInput placeholder="ram" formControlName="ram">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Espacio</mat-label>
+                <input matInput placeholder="espacio" formControlName="espacio">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>ip_fija_oficina</mat-label>
+                <input matInput placeholder="ip_fija_oficina" formControlName="ip_fija_oficina">
+            </mat-form-field>
+
+            <div class="example-button-row">
+                <button mat-raised-button color = "primary">Guardar</button> | <a mat-raised-button color = "accent" (click)="closePopup()">Cerrar</a>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

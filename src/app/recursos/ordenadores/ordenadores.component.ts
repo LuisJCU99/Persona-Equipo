@@ -28,7 +28,7 @@ export class OrdenadoresComponent implements OnInit {
     this.loadOrdenador();
   }
 
-  displayColumns: string[] = ["id", "idOrdenador", "marca", "modelo", "procesador", "ram", "espacio", "ip_fija_oficina", "action"];
+  displayColumns: string[] = ["id", "idOrdenador", "marca", "modelo", "procesador", "ram", "espacio", "ip_fija_oficina", "idEmpresa", "idTrabajador", "action"];
 
   openPopup(id: any) {
     const popup =
@@ -44,7 +44,7 @@ export class OrdenadoresComponent implements OnInit {
     popup.afterClosed().subscribe(r => {
       this.loadOrdenador();
     })
-  } 
+  }
 
   loadOrdenador() {
     this.api.getAllOrdenadores().subscribe(response => {
