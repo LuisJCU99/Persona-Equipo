@@ -1,11 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+
 import { Empresa } from "../models/empresa";
 import { Proyecto } from '../models/proyecto';
 import { Puesto } from '../models/puesto';
 import { Trabajador } from '../models/trabajador';
+
 import { Ordenador } from '../models/recursos/ordenador';
+import { Smartphone } from '../models/recursos/smartphone';
+
 
 
 @Injectable({
@@ -99,6 +103,23 @@ export class ApiService {
   }
   updateOrdenador(id: any, ordenadorData: any) {
     return this.http.put(this.apiUrl + '/ordenador' + '/' + id, ordenadorData)
+  }
+
+  //SMARTPHONES
+  getAllSmartphones(): Observable<Smartphone[]> {
+    return this.http.get<Smartphone[]>(this.apiUrl + '/smartphone');
+  }
+  createSmartphone(smartphoneData: any) {
+    return this.http.post(this.apiUrl + '/smartphone', smartphoneData)
+  }
+  getSmartphoneById(id: any): Observable<Smartphone[]> {
+    return this.http.get<Smartphone[]>(this.apiUrl + '/smartphone' + '/' + id);
+  }
+  deleteSmartphoneById(id: any) {
+    return this.http.delete(this.apiUrl + '/smartphone' + '/' + id);
+  }
+  updateSmartphone(id: any, smartphoneData: any) {
+    return this.http.put(this.apiUrl + '/smartphone' + '/' + id, smartphoneData)
   }
 }
 

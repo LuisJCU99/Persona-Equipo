@@ -1,6 +1,6 @@
 export interface Smartphone {
     id: number,
-    IMEI: string,
+    imei: string,
     marca: string,
     modelo: string,
     idEmpresa: number,

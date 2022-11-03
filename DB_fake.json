@@ -149,5 +149,13 @@
       "idEmpresa": 1,
       "idTrabajador": 1
     }
+  ],
+  "smartphone": [
+    {
+      "imei": "32165468",
+      "marca": "oppo",
+      "modelo": "x1",
+      "id": 1
+    }
   ]
 }
