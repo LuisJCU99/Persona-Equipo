@@ -9,6 +9,8 @@ import { Trabajador } from '../models/trabajador';
 
 import { Ordenador } from '../models/recursos/ordenador';
 import { Smartphone } from '../models/recursos/smartphone';
+import { Extension } from '../models/recursos/extension';
+import { Usuario_Caixa } from '../models/recursos/usuario-caixa';
 
 
 
@@ -88,6 +90,7 @@ export class ApiService {
     return this.http.put(this.apiUrl + '/puesto' + '/' + id, puestoData)
   }
 
+  //---------------------------------------------RECURSOS-------------------------------------------
   //ORDENADORES
   getAllOrdenadores(): Observable<Ordenador[]> {
     return this.http.get<Ordenador[]>(this.apiUrl + '/ordenador');
@@ -120,6 +123,40 @@ export class ApiService {
   }
   updateSmartphone(id: any, smartphoneData: any) {
     return this.http.put(this.apiUrl + '/smartphone' + '/' + id, smartphoneData)
+  }
+
+  //EXTENSIONES
+  getAllExtensiones(): Observable<Extension[]> {
+    return this.http.get<Extension[]>(this.apiUrl + '/extension');
+  }
+  createExtension(extensionData: any) {
+    return this.http.post(this.apiUrl + '/extension', extensionData)
+  }
+  getExtensionById(id: any): Observable<Extension[]> {
+    return this.http.get<Extension[]>(this.apiUrl + '/extension' + '/' + id);
+  }
+  deleteExtensionById(id: any) {
+    return this.http.delete(this.apiUrl + '/extension' + '/' + id);
+  }
+  updateExtension(id: any, extensionData: any) {
+    return this.http.put(this.apiUrl + '/extension' + '/' + id, extensionData)
+  }
+
+  //USUARIOS DE CAIXA 
+  getAllUsuarios_Caixa(): Observable<Usuario_Caixa[]> {
+    return this.http.get<Usuario_Caixa[]>(this.apiUrl + '/caixa');
+  }
+  createUsuario_Caixa(usuario_caixaData: any) {
+    return this.http.post(this.apiUrl + '/caixa', usuario_caixaData)
+  }
+  getUsuario_CaixaById(id: any): Observable<Usuario_Caixa[]> {
+    return this.http.get<Usuario_Caixa[]>(this.apiUrl + '/caixa' + '/' + id);
+  }
+  deleteUsuario_CaixaById(id: any) {
+    return this.http.delete(this.apiUrl + '/caixa' + '/' + id);
+  }
+  updateUsuario_Caixa(id: any, usuario_caixaData: any) {
+    return this.http.put(this.apiUrl + '/caixa' + '/' + id, usuario_caixaData)
   }
 }
 

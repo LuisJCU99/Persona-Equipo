@@ -155,7 +155,54 @@
       "imei": "32165468",
       "marca": "oppo",
       "modelo": "x1",
-      "id": 1
+      "id": 1,
+      "idEmpresa": 1,
+      "idTrabajador": 1
+    }
+  ],
+  "extension": [
+    {
+      "id": 1,
+      "idExtension": "string",
+      "telefono": "string",
+      "ip_publica_vpn": "string",
+      "fecha_caducidad_vpn": 1,
+      "idEmpresa": 1,
+      "idTrabajador": 1
+    },
+    {
+      "idExtension": "3",
+      "telefono": "3424234",
+      "ip_publica_vpn": "324",
+      "fecha_caducidad_vpn": "21/06/1999",
+      "idEmpresa": "3",
+      "idTrabajador": "3",
+      "id": 2
+    },
+    {
+      "idExtension": "3",
+      "telefono": "3",
+      "ip_publica_vpn": "3",
+      "fecha_caducidad_vpn": "3",
+      "idEmpresa": "3",
+      "idTrabajador": "3",
+      "id": 3
+    }
+  ],
+  "caixa": [
+    {
+      "id": 1,
+      "usuario_caixa": "string",
+      "dc_us_caixa": "string",
+      "idEmpresa": 1,
+      "idTrabajador": 1
+    },
+    {
+      "id": 2,
+      "usuario_caixa": "f",
+      "dc_us_caixa": "ff",
+      "idEmpresa": "f",
+      "idTrabajador": "f"
     }
   ]
 }

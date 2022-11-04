@@ -20,8 +20,18 @@ export class PopupOrdenadoresComponent implements OnInit {
     if (this.data.id != '' && this.data.id != null) {
       this.api.getOrdenadorById(this.data.id).subscribe(response => {
         this.editData = response;
-        this.ordenadorForm.setValue({ id: this.editData.id, idOrdenador: this.editData.idOrdenador, marca: this.editData.marca, modelo: this.editData.modelo, 
-          procesador: this.editData.procesador, ram: this.editData.ram, espacio: this.editData.espacio, ip_fija_oficina: this.editData.ip_fija_oficina})
+        this.ordenadorForm.setValue({
+          id: this.editData.id,
+          idOrdenador: this.editData.idOrdenador,
+          marca: this.editData.marca,
+          modelo: this.editData.modelo,
+          procesador: this.editData.procesador,
+          ram: this.editData.ram,
+          espacio: this.editData.espacio,
+          ip_fija_oficina: this.editData.ip_fija_oficina,
+          idEmpresa: this.editData.idEmpresa,
+          idTrabajador: this.editData.idTrabajador
+        })
       });
     }
   }
@@ -33,7 +43,11 @@ export class PopupOrdenadoresComponent implements OnInit {
     procesador: this.builder.control('', Validators.required),
     ram: this.builder.control('', Validators.required),
     espacio: this.builder.control('', Validators.required),
-    ip_fija_oficina: this.builder.control('', Validators.required)
+    ip_fija_oficina: this.builder.control('', Validators.required),
+    idEmpresa: this.builder.control('', Validators.required),
+    idTrabajador: this.builder.control('', Validators.required),
+
+
   });
 
   saveOrdenador() {

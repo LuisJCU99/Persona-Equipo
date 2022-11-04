@@ -1,7 +1,7 @@
 <mat-card>
     <mat-card-content>
-        <h3>Ordenador:</h3>
-        <form [formGroup]="smartphoneForm" (ngSubmit)="saveSmartphone()">
+        <h3>Extensión:</h3>
+        <form [formGroup]="extensionForm" (ngSubmit)="saveExtension()">
 
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Id</mat-label>
@@ -9,18 +9,23 @@
             </mat-form-field>
 
             <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>imei</mat-label>
-                <input matInput placeholder="imei" formControlName="imei">
+                <mat-label>idExtension</mat-label>
+                <input matInput placeholder="idExtension" formControlName="idExtension">
             </mat-form-field>
 
             <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>Marca</mat-label>
-                <input matInput placeholder="marca" formControlName="marca">
+                <mat-label>telefono</mat-label>
+                <input matInput placeholder="telefono" formControlName="telefono">
             </mat-form-field>
 
             <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>Modelo</mat-label>
-                <input matInput placeholder="modelo" formControlName="modelo">
+                <mat-label>ip_publica_vpn</mat-label>
+                <input matInput placeholder="ip_publica_vpn" formControlName="ip_publica_vpn">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>fecha_caducidad_vpn</mat-label>
+                <input matInput placeholder="fecha_caducidad_vpn" formControlName="fecha_caducidad_vpn">
             </mat-form-field>
 
             <mat-form-field class="example-full-width" appearance="fill">

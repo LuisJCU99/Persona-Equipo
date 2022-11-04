@@ -33,7 +33,7 @@ export class OrdenadoresComponent implements OnInit {
   openPopup(id: any) {
     const popup =
       this.dialog.open(PopupOrdenadoresComponent, {
-        width: '50%',
+        //width: '100%',
         exitAnimationDuration: '500ms',
         enterAnimationDuration: '500ms',
         //necesito el id

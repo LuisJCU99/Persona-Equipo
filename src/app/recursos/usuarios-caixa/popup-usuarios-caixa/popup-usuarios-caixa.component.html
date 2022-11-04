@@ -1,7 +1,7 @@
 <mat-card>
     <mat-card-content>
-        <h3>Ordenador:</h3>
-        <form [formGroup]="smartphoneForm" (ngSubmit)="saveSmartphone()">
+        <h3>Usuario Caixa:</h3>
+        <form [formGroup]="caixaForm" (ngSubmit)="saveCaixa()">
 
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Id</mat-label>
@@ -9,18 +9,13 @@
             </mat-form-field>
 
             <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>imei</mat-label>
-                <input matInput placeholder="imei" formControlName="imei">
+                <mat-label>usuario_caixa</mat-label>
+                <input matInput placeholder="usuario_caixa" formControlName="usuario_caixa">
             </mat-form-field>
 
             <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>Marca</mat-label>
-                <input matInput placeholder="marca" formControlName="marca">
-            </mat-form-field>
-
-            <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>Modelo</mat-label>
-                <input matInput placeholder="modelo" formControlName="modelo">
+                <mat-label>dc_us_caixa</mat-label>
+                <input matInput placeholder="dc_us_caixa" formControlName="dc_us_caixa">
             </mat-form-field>
 
             <mat-form-field class="example-full-width" appearance="fill">
