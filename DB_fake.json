@@ -79,6 +79,256 @@
       "gmail_tnf": "javierbacherotnf@gmail.com",
       "idEmpresa": "1",
       "id": 7
+    },
+    {
+      "nombre": "Oriol",
+      "usuario": "oriol.roig",
+      "email_tnf": "oriol.roig@thenetfirm.com",
+      "apellidos": "Roig",
+      "password": "no se",
+      "gmail_tnf": "oriolroigtnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 8
+    },
+    {
+      "nombre": "Jorge",
+      "usuario": "jorge.martinez",
+      "email_tnf": "jorge.martinez@thenetfirm.com",
+      "apellidos": "Martinez",
+      "password": "no se",
+      "gmail_tnf": "j.martinez.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 9
+    },
+    {
+      "nombre": "Telmo",
+      "usuario": "telmo.tejedo",
+      "email_tnf": "telmo.tejedo@thenetfirm.com",
+      "apellidos": "Tejedo",
+      "password": "no se",
+      "gmail_tnf": "telmo.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 10
+    },
+    {
+      "nombre": "Carlos",
+      "usuario": "carlos.herranz",
+      "email_tnf": "carlos.herranz@thenetfirm.com",
+      "apellidos": "Herranz",
+      "password": "no se",
+      "gmail_tnf": "cherranz.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 11
+    },
+    {
+      "nombre": "Jesús",
+      "usuario": "jesus.galvez",
+      "email_tnf": "jesus.galvez@thenetfirm.com",
+      "apellidos": "Gálvez",
+      "password": "no se",
+      "gmail_tnf": "jesus.galvez.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 12
+    },
+    {
+      "nombre": "Jorge",
+      "usuario": "jorge.andreu",
+      "email_tnf": "jorge.andreu@thenetfirm.com",
+      "apellidos": "Andreu",
+      "password": "no se",
+      "gmail_tnf": "jandreu.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 13
+    },
+    {
+      "nombre": "Raúl",
+      "usuario": "raul.garvi",
+      "email_tnf": "raul.garvi@thenetfirm.com",
+      "apellidos": "Garvi",
+      "password": "no se",
+      "gmail_tnf": "raul.garvi.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 14
+    },
+    {
+      "nombre": "Tono",
+      "usuario": "tono.fuentes",
+      "email_tnf": "tono.fuentes.tnf@thenetfirm.com",
+      "apellidos": "Fuentes",
+      "password": "no se",
+      "gmail_tnf": "tono.fuentes.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 15
+    },
+    {
+      "nombre": "Pablo",
+      "usuario": "pablo.roqueta",
+      "email_tnf": "pablo.roqueta@thenetfirm.com",
+      "apellidos": "Roqueta",
+      "password": "no se",
+      "gmail_tnf": "pablo.roqueta.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 16
+    },
+    {
+      "nombre": "Raúl",
+      "usuario": "raul.serrano",
+      "email_tnf": "raul.serrano@thenetfirm.com",
+      "apellidos": "Serrano",
+      "password": "no se",
+      "gmail_tnf": "raul.serrano.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 17
+    },
+    {
+      "nombre": "Luca",
+      "usuario": "luca.lopez",
+      "email_tnf": "luca.lopez@thenetfirm.com",
+      "apellidos": "López",
+      "password": "no se",
+      "gmail_tnf": "luca.lopez.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 18
+    },
+    {
+      "nombre": "Alex",
+      "usuario": "alex.ursa",
+      "email_tnf": "alex.ursa@thenetfirm.com",
+      "apellidos": "Maer",
+      "password": "no se",
+      "gmail_tnf": "alex.ursa.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 19
+    },
+    {
+      "nombre": "Paco",
+      "usuario": "paco.soria",
+      "email_tnf": "paco.soria@thenetfirm.com",
+      "apellidos": "Soria",
+      "password": "no se",
+      "gmail_tnf": "p.soriacorcoles@gmail.com",
+      "idEmpresa": "1",
+      "id": 20
+    },
+    {
+      "nombre": "Pablo",
+      "usuario": "pablo.fuentes",
+      "email_tnf": "pablo.fuentes@thenetfirm.com",
+      "apellidos": "Fuentes",
+      "password": "no se",
+      "gmail_tnf": "pablo.fuentes.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 21
+    },
+    {
+      "nombre": "David",
+      "usuario": "david.castell",
+      "email_tnf": "david.castell@thenetfirm.com",
+      "apellidos": "Castell",
+      "password": "no se",
+      "gmail_tnf": "david.castell.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 22
+    },
+    {
+      "nombre": "Eduardo",
+      "usuario": "eduardo.dedios",
+      "email_tnf": "eduardo.dedios@thenetfirm.com",
+      "apellidos": "De Dios",
+      "password": "no se",
+      "gmail_tnf": "eduado.dedioscaston.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 23
+    },
+    {
+      "nombre": "Alejandro",
+      "usuario": "alejandro.morales",
+      "email_tnf": "alejandro.morales@thenetfirm.com",
+      "apellidos": "Morales",
+      "password": "no se",
+      "gmail_tnf": "alejandro.morales.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 24
+    },
+    {
+      "nombre": "Carles",
+      "usuario": "carles.valero",
+      "email_tnf": "carles.valero@thenetfirm.com",
+      "apellidos": "Valero",
+      "password": "no se",
+      "gmail_tnf": "no",
+      "idEmpresa": "1",
+      "id": 25
+    },
+    {
+      "nombre": "Diego",
+      "usuario": "diego.solsona",
+      "email_tnf": "diego.solsona@thenetfirm.com",
+      "apellidos": "Solsona",
+      "password": "no se",
+      "gmail_tnf": "no",
+      "idEmpresa": "1",
+      "id": 26
+    },
+    {
+      "nombre": "Dani",
+      "usuario": "daniel.palomo",
+      "email_tnf": "daniel.palomo@thenetfirm.com",
+      "apellidos": "Palomo",
+      "password": "no se",
+      "gmail_tnf": "daniel.palomo.tnf@gmail.com",
+      "idEmpresa": "1",
+      "id": 27
+    },
+    {
+      "nombre": "Antonio",
+      "usuario": "antonio.riaza",
+      "email_tnf": "antonio.riaza@thenetfirm.com",
+      "apellidos": "Riaza",
+      "password": "no se",
+      "gmail_tnf": "no",
+      "idEmpresa": "1",
+      "id": 28
+    },
+    {
+      "id": 29,
+      "nombre": "Luis",
+      "usuario": "luis.castano",
+      "email_tnf": "luis.castano@thenetfirm.com",
+      "apellidos": "Castaño",
+      "password": "no se",
+      "gmail_tnf": "no",
+      "idEmpresa": "2"
+    },
+    {
+      "id": 30,
+      "nombre": "Vicente",
+      "usuario": "vicente.soler",
+      "email_tnf": "vicente.soler@thenetfirm.com",
+      "apellidos": "Soler",
+      "password": "no se",
+      "gmail_tnf": "vsoler.netfirm@gmail.com",
+      "idEmpresa": "2"
+    },
+    {
+      "nombre": "Beatriz",
+      "usuario": "beatriz.reboll",
+      "email_tnf": "beatriz.reboll@adfinplus.es",
+      "apellidos": "Reboll",
+      "password": "no se",
+      "gmail_tnf": "no",
+      "idEmpresa": "2",
+      "id": 31
+    },
+    {
+      "nombre": "David",
+      "usuario": "david.calvente",
+      "email_tnf": "david.calvente@thenetfirm.com",
+      "apellidos": "Calvente",
+      "password": "no se",
+      "gmail_tnf": "david.calvente@gmail.com",
+      "idEmpresa": "1",
+      "id": 32
     }
   ],
   "proyecto": [
@@ -86,22 +336,29 @@
       "nombre": "AppCbk",
       "idEmpresa": "1",
       "id": 1
+    },
+    {
+      "nombre": "Imagin",
+      "idEmpresa": "1",
+      "id": 2
+    },
+    {
+      "nombre": "Imagin/AppCBK",
+      "idEmpresa": "1",
+      "id": 3
+    },
+    {
+      "nombre": "Teens",
+      "idEmpresa": "1",
+      "id": 4
+    },
+    {
+      "nombre": "AdFinPlus",
+      "idEmpresa": "1",
+      "id": 5
     }
   ],
   "puesto": [
-    {
-      "tecnologia": "y",
-      "funcion": "y",
-      "idProyecto": "2",
-      "id": 5
-    },
-    {
-      "tecnologia": "d",
-      "funcion": "d",
-      "idTrabajador": "3",
-      "idProyecto": 3,
-      "id": 6
-    },
     {
       "tecnologia": "Android",
       "funcion": "Push",
@@ -122,42 +379,675 @@
       "idTrabajador": "3",
       "idProyecto": 1,
       "id": 9
+    },
+    {
+      "id": 10,
+      "tecnologia": "iOS",
+      "funcion": "Push",
+      "idTrabajador": "4",
+      "idProyecto": 1
+    },
+    {
+      "id": 11,
+      "tecnologia": "Android-Aut",
+      "funcion": "Login",
+      "idTrabajador": "5",
+      "idProyecto": 1
+    },
+    {
+      "tecnologia": "iOS",
+      "funcion": "Login",
+      "idTrabajador": "6",
+      "idProyecto": 1,
+      "id": 12
+    },
+    {
+      "tecnologia": "iOS",
+      "funcion": "Push",
+      "idTrabajador": "7",
+      "idProyecto": 1,
+      "id": 13
+    },
+    {
+      "tecnologia": "iOS",
+      "funcion": "Login",
+      "idTrabajador": "8",
+      "idProyecto": 1,
+      "id": 14
+    },
+    {
+      "tecnologia": "QA",
+      "funcion": "QA",
+      "idTrabajador": "9",
+      "idProyecto": 1,
+      "id": 15
+    },
+    {
+      "tecnologia": "QA",
+      "funcion": "QA",
+      "idTrabajador": "10",
+      "idProyecto": 1,
+      "id": 16
+    },
+    {
+      "tecnologia": "Android",
+      "funcion": "Core Team",
+      "idTrabajador": "11",
+      "idProyecto": 2,
+      "id": 17
+    },
+    {
+      "tecnologia": "Android",
+      "funcion": "Login",
+      "idTrabajador": "12",
+      "idProyecto": 2,
+      "id": 18
+    },
+    {
+      "tecnologia": "Android",
+      "funcion": "Login",
+      "idTrabajador": "13",
+      "idProyecto": 2,
+      "id": 19
+    },
+    {
+      "tecnologia": "iOS",
+      "funcion": "OT/Teens",
+      "idTrabajador": "14",
+      "idProyecto": 2,
+      "id": 20
+    },
+    {
+      "tecnologia": "Android",
+      "funcion": "OT/Teens",
+      "idTrabajador": "15",
+      "idProyecto": 2,
+      "id": 21
+    },
+    {
+      "tecnologia": "iOS",
+      "funcion": "Core Team",
+      "idTrabajador": "16",
+      "idProyecto": 2,
+      "id": 22
+    },
+    {
+      "tecnologia": "iOS",
+      "funcion": "App Base",
+      "idTrabajador": "17",
+      "idProyecto": 2,
+      "id": 23
+    },
+    {
+      "tecnologia": "iOS",
+      "funcion": "App Base",
+      "idTrabajador": "18",
+      "idProyecto": 2,
+      "id": 24
+    },
+    {
+      "tecnologia": "Android",
+      "funcion": "App Base",
+      "idTrabajador": "19",
+      "idProyecto": 2,
+      "id": 25
+    },
+    {
+      "tecnologia": "QA",
+      "funcion": "QA",
+      "idTrabajador": "20",
+      "idProyecto": 2,
+      "id": 26
+    },
+    {
+      "tecnologia": "QA",
+      "funcion": "QA",
+      "idTrabajador": "21",
+      "idProyecto": 2,
+      "id": 27
+    },
+    {
+      "tecnologia": "Automatización",
+      "funcion": "Kotlin",
+      "idTrabajador": "22",
+      "idProyecto": 3,
+      "id": 28
+    },
+    {
+      "tecnologia": "Automatización",
+      "funcion": "Kotlin",
+      "idTrabajador": "23",
+      "idProyecto": 3,
+      "id": 29
+    },
+    {
+      "tecnologia": "iOS",
+      "funcion": "Teens",
+      "idTrabajador": "24",
+      "idProyecto": 4,
+      "id": 30
+    },
+    {
+      "tecnologia": "iOS",
+      "funcion": "Teens",
+      "idTrabajador": "25",
+      "idProyecto": 4,
+      "id": 31
+    },
+    {
+      "tecnologia": "Android",
+      "funcion": "Teens",
+      "idTrabajador": "26",
+      "idProyecto": 4,
+      "id": 32
+    },
+    {
+      "tecnologia": "Android",
+      "funcion": "Teens",
+      "idTrabajador": "27",
+      "idProyecto": 4,
+      "id": 33
+    },
+    {
+      "tecnologia": "PM",
+      "funcion": "PM",
+      "idTrabajador": "28",
+      "idProyecto": 2,
+      "id": 34
+    },
+    {
+      "tecnologia": "Angular",
+      "funcion": "Frontal",
+      "idTrabajador": "29",
+      "idProyecto": 5,
+      "id": 35
+    },
+    {
+      "tecnologia": "J2EE",
+      "funcion": "Back",
+      "idTrabajador": "30",
+      "idProyecto": 5,
+      "id": 36
     }
   ],
   "ordenador": [
     {
-      "id": 1,
-      "idOrdenador": "string",
-      "marca": "string",
-      "modelo": "string",
-      "procesador": "string",
-      "ram": "string",
-      "espacio": "string",
-      "ip_fija_oficina": "string",
-      "idEmpresa": 1,
-      "idTrabajador": 1
+      "idOrdenador": "efrt43t",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (15-pulgadas, 2019)",
+      "procesador": "2,3 GHz Intel Core i9 de 8 núcleos",
+      "ram": "16 GB",
+      "espacio": "500 Gb",
+      "ip_fija_oficina": "192.168.150.168",
+      "idEmpresa": "1",
+      "idTrabajador": "1",
+      "id": 1
     },
     {
-      "id": 2,
-      "idOrdenador": "string",
-      "marca": "string",
-      "modelo": "string",
-      "procesador": "string",
-      "ram": "string",
-      "espacio": "string",
-      "ip_fija_oficina": "string",
-      "idEmpresa": 1,
-      "idTrabajador": 1
+      "idOrdenador": "gberth",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (16 pulgadas, 2021)",
+      "procesador": "Apple M1 Max 10",
+      "ram": "64 GB",
+      "espacio": "1 TB",
+      "ip_fija_oficina": "192.168.150.65",
+      "idEmpresa": "1",
+      "idTrabajador": "2",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "idOrdenador": "dhgsrth",
+      "marca": "?",
+      "modelo": "?",
+      "procesador": "?",
+      "ram": "?",
+      "espacio": "?",
+      "ip_fija_oficina": "?",
+      "idEmpresa": "1",
+      "idTrabajador": "3"
+    },
+    {
+      "idOrdenador": "sgsr",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (16 pulgadas, 2019)",
+      "procesador": "2,3 GHz Intel Core i9 de 8 núcleos",
+      "ram": "16 GB",
+      "espacio": "1TB",
+      "ip_fija_oficina": "192.168.150.67",
+      "idEmpresa": "1",
+      "idTrabajador": "5",
+      "id": 4
+    },
+    {
+      "idOrdenador": "sdfsd",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (16 pulgadas, 2021)",
+      "procesador": "Apple M1 Max 10 (8 de rendimiento y 2 de eficiencia)",
+      "ram": "64 GB",
+      "espacio": "1 TB",
+      "ip_fija_oficina": "192.168.150.80",
+      "idEmpresa": "1",
+      "idTrabajador": "4",
+      "id": 5
+    },
+    {
+      "idOrdenador": "ghdrt",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (16 pulgadas, 2021)",
+      "procesador": "Apple M1 Max 10 (8 de rendimiento y 2 de eficiencia)",
+      "ram": "64 GB",
+      "espacio": "1 TB",
+      "ip_fija_oficina": "192.168.150.70",
+      "idEmpresa": "1",
+      "idTrabajador": "6",
+      "id": 6
+    },
+    {
+      "idOrdenador": "fghgfh",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (16 pulgadas, 2021)",
+      "procesador": "Apple M1 Max - 10 núcleos",
+      "ram": "32GB",
+      "espacio": "1 TB",
+      "ip_fija_oficina": "192.168.150.59",
+      "idEmpresa": "1",
+      "idTrabajador": "7",
+      "id": 7
+    },
+    {
+      "idOrdenador": "sdf",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (15 pulgadas, 2019)",
+      "procesador": "2,3 GHz Intel Core i9 de 8 núcleos",
+      "ram": "16GB",
+      "espacio": "500 GB",
+      "ip_fija_oficina": "192.168.150.90",
+      "idEmpresa": "1",
+      "idTrabajador": "8",
+      "id": 8
+    },
+    {
+      "idOrdenador": "xcvnb",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (Retina, 15 pulgadas, mediados de 2015)",
+      "procesador": "2,2 GHz Intel Core i7 de 4 núcleos",
+      "ram": "16GB",
+      "espacio": "250 Gb",
+      "ip_fija_oficina": "192.168.150.184",
+      "idEmpresa": "1",
+      "idTrabajador": "9",
+      "id": 9
+    },
+    {
+      "idOrdenador": "vcxb",
+      "marca": "Gigabyte",
+      "modelo": "?",
+      "procesador": "2,8 GHz Intel Core i7 ",
+      "ram": "16GB",
+      "espacio": "?",
+      "ip_fija_oficina": "192.168.150.81",
+      "idEmpresa": "1",
+      "idTrabajador": "10",
+      "id": 10
+    },
+    {
+      "idOrdenador": "fg",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (16 pulgadas, 2021)",
+      "procesador": "Apple M1 Max - 10 núcleos",
+      "ram": "16GB",
+      "espacio": "1 TB",
+      "ip_fija_oficina": "192.168.150.154",
+      "idEmpresa": "1",
+      "idTrabajador": "11",
+      "id": 11
+    },
+    {
+      "idOrdenador": "gfhnfg",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (16 pulgadas, 2019)",
+      "procesador": "2,3 GHz Intel Core i9 de 8 núcleos",
+      "ram": "16 GB",
+      "espacio": "1TB",
+      "ip_fija_oficina": "192.168.150.159",
+      "idEmpresa": "1",
+      "idTrabajador": "12",
+      "id": 12
+    },
+    {
+      "idOrdenador": "dfgdf",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (16 pulgadas, 2021)",
+      "procesador": "Apple M1 Max 10 (8 de rendimiento y 2 de eficiencia)",
+      "ram": "64 Gb",
+      "espacio": "1 Tb",
+      "ip_fija_oficina": "192.168.150.178",
+      "idEmpresa": "1",
+      "idTrabajador": "13",
+      "id": 13
+    },
+    {
+      "idOrdenador": "dfsf",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (16 pulgadas, 2019)",
+      "procesador": "2,3 GHz Intel Core i9 de 8 núcleos",
+      "ram": "64GB",
+      "espacio": "2 TB",
+      "ip_fija_oficina": "192.168.150.187",
+      "idEmpresa": "1",
+      "idTrabajador": "14",
+      "id": 14
+    },
+    {
+      "idOrdenador": "fgdf",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (16 pulgadas, 2019)",
+      "procesador": "2,3 GHz Intel Core i9 de 8 núcleos",
+      "ram": "16GB",
+      "espacio": "1TB",
+      "ip_fija_oficina": "192.168.150.191",
+      "idEmpresa": "1",
+      "idTrabajador": "15",
+      "id": 15
+    },
+    {
+      "idOrdenador": "rgerg",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (16 pulgadas, 2021)",
+      "procesador": "Apple M1 Max - 10 núcleos",
+      "ram": "64GB",
+      "espacio": "1 TB",
+      "ip_fija_oficina": "192.168.150.155",
+      "idEmpresa": "1",
+      "idTrabajador": "16",
+      "id": 16
+    },
+    {
+      "idOrdenador": "werfewf",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (15 pulgadas, 2019)",
+      "procesador": "2,3 GHz Intel Core i9 de 8 núcleos",
+      "ram": "16 GB",
+      "espacio": "500 GB",
+      "ip_fija_oficina": "192.168.150.177",
+      "idEmpresa": "1",
+      "idTrabajador": "17",
+      "id": 17
+    },
+    {
+      "idOrdenador": "sdfsd",
+      "marca": "Apple ",
+      "modelo": "MacBook Pro (16 pulgadas, 2021)",
+      "procesador": "Apple M1 Max 10 (8 de rendimiento y 2 de eficiencia)",
+      "ram": "32 GB",
+      "espacio": "1 TB",
+      "ip_fija_oficina": "192.168.150.188",
+      "idEmpresa": "1",
+      "idTrabajador": "18",
+      "id": 18
+    },
+    {
+      "idOrdenador": "dfag",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (16 pulgadas, 2021)",
+      "procesador": "Apple M1 Max 10 (8 de rendimiento y 2 de eficiencia)",
+      "ram": "32 GB",
+      "espacio": "1 TB",
+      "ip_fija_oficina": "192.168.150.152",
+      "idEmpresa": "1",
+      "idTrabajador": "19",
+      "id": 19
+    },
+    {
+      "idOrdenador": "sdafc",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (15-inch, 2017)",
+      "procesador": "2,8 GHz Intel Core i7",
+      "ram": "16 GB",
+      "espacio": "?",
+      "ip_fija_oficina": "192.168.150.185",
+      "idEmpresa": "1",
+      "idTrabajador": "20",
+      "id": 20
+    },
+    {
+      "idOrdenador": "swef",
+      "marca": "Toshiba",
+      "modelo": "Satellite P850",
+      "procesador": "Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz   2.40 GHz",
+      "ram": "8GB",
+      "espacio": "500GB",
+      "ip_fija_oficina": "192.168.150.135",
+      "idEmpresa": "1",
+      "idTrabajador": "21",
+      "id": 21
+    },
+    {
+      "idOrdenador": "gfbhg",
+      "marca": "Toshiba",
+      "modelo": "Satellite P850",
+      "procesador": "Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz   2.21 GHz",
+      "ram": "16GB",
+      "espacio": "500GB",
+      "ip_fija_oficina": "?",
+      "idEmpresa": "1",
+      "idTrabajador": "22",
+      "id": 22
+    },
+    {
+      "idOrdenador": "sgdnb",
+      "marca": "ACER",
+      "modelo": "Acer Aspire 5",
+      "procesador": "Intel Core i5-1135G7 CPU @ 2.40GHz up to 4.2GHz",
+      "ram": "16GB",
+      "espacio": "1TB",
+      "ip_fija_oficina": "?",
+      "idEmpresa": "1",
+      "idTrabajador": "23",
+      "id": 23
+    },
+    {
+      "idOrdenador": "asdf",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (16 pulgadas, 2019)",
+      "procesador": "2,3 GHz Intel Core i9 de 8 núcleos",
+      "ram": "16GB",
+      "espacio": "1TB",
+      "ip_fija_oficina": "192.168.150.114",
+      "idEmpresa": "1",
+      "idTrabajador": "24",
+      "id": 24
+    },
+    {
+      "id": 25,
+      "idOrdenador": "fdgfdgdf",
+      "marca": "HP",
+      "modelo": "HP ZBOOK STUDIO X360 G5",
+      "procesador": "Intel(R) Core(TM) i9-8950HK CPU 2.90 GHz",
+      "ram": "16GB",
+      "espacio": "512GB",
+      "ip_fija_oficina": "192.168.180.122",
+      "idEmpresa": "1",
+      "idTrabajador": "29"
+    },
+    {
+      "id": 26,
+      "idOrdenador": "dgfhhg",
+      "marca": "Apple",
+      "modelo": "?",
+      "procesador": "?",
+      "ram": "?",
+      "espacio": "?",
+      "ip_fija_oficina": "192.168.150.72",
+      "idEmpresa": "1",
+      "idTrabajador": "30"
+    },
+    {
+      "idOrdenador": "j,hvg",
+      "marca": "Apple",
+      "modelo": "MacBook Pro (16 pulgadas, 2021)",
+      "procesador": "Apple M1 Max - 10 núcleos",
+      "ram": "64GB",
+      "espacio": "2TB",
+      "ip_fija_oficina": "192.168.150.150",
+      "idEmpresa": "1",
+      "idTrabajador": "32",
+      "id": 27
     }
   ],
   "smartphone": [
     {
-      "imei": "32165468",
-      "marca": "oppo",
-      "modelo": "x1",
-      "id": 1,
-      "idEmpresa": 1,
-      "idTrabajador": 1
+      "imei": "?",
+      "marca": "Oppo",
+      "modelo": "A74",
+      "idEmpresa": "1",
+      "idTrabajador": "1",
+      "id": 1
+    },
+    {
+      "imei": "?",
+      "marca": "NOKIA",
+      "modelo": "G10",
+      "idEmpresa": "1",
+      "idTrabajador": "3",
+      "id": 2
+    },
+    {
+      "imei": "?",
+      "marca": "SAMSUNG",
+      "modelo": "S7",
+      "idEmpresa": "1",
+      "idTrabajador": "4",
+      "id": 3
+    },
+    {
+      "imei": "?",
+      "marca": "APPLE",
+      "modelo": "IPHONE XS MAX",
+      "idEmpresa": "1",
+      "idTrabajador": "6",
+      "id": 4
+    },
+    {
+      "imei": "?",
+      "marca": "APPLE",
+      "modelo": "IPHONE 8",
+      "idEmpresa": "1",
+      "idTrabajador": "7",
+      "id": 5
+    },
+    {
+      "imei": "?",
+      "marca": "APPLE",
+      "modelo": "IPHONE SE",
+      "idEmpresa": "1",
+      "idTrabajador": "8",
+      "id": 6
+    },
+    {
+      "imei": "?",
+      "marca": "SAMSUNG",
+      "modelo": "A32",
+      "idEmpresa": "1",
+      "idTrabajador": "9",
+      "id": 7
+    },
+    {
+      "imei": "?",
+      "marca": "XIAOMI ",
+      "modelo": "REDMI 9",
+      "idEmpresa": "1",
+      "idTrabajador": "10",
+      "id": 8
+    },
+    {
+      "imei": "?",
+      "marca": "SAMSUNG",
+      "modelo": "A22",
+      "idEmpresa": "1",
+      "idTrabajador": "11",
+      "id": 9
+    },
+    {
+      "imei": "?",
+      "marca": "SAMSUNG ",
+      "modelo": "S10+",
+      "idEmpresa": "1",
+      "idTrabajador": "12",
+      "id": 10
+    },
+    {
+      "imei": "?",
+      "marca": "SAMSUNG",
+      "modelo": "S10+",
+      "idEmpresa": "1",
+      "idTrabajador": "13",
+      "id": 11
+    },
+    {
+      "imei": "?",
+      "marca": "OPPO",
+      "modelo": "A54S",
+      "idEmpresa": "1",
+      "idTrabajador": "14",
+      "id": 12
+    },
+    {
+      "imei": "?",
+      "marca": "SAMSUNG",
+      "modelo": "A13",
+      "idEmpresa": "1",
+      "idTrabajador": "15",
+      "id": 13
+    },
+    {
+      "imei": "?",
+      "marca": "APPLE",
+      "modelo": "IPHONE 12 PRO",
+      "idEmpresa": "1",
+      "idTrabajador": "16",
+      "id": 14
+    },
+    {
+      "imei": "?",
+      "marca": "APPLE",
+      "modelo": "IPHONE X",
+      "idEmpresa": "1",
+      "idTrabajador": "17",
+      "id": 15
+    },
+    {
+      "imei": "?",
+      "marca": "APPLE",
+      "modelo": "IPHONE 6 PLUS",
+      "idEmpresa": "1",
+      "idTrabajador": "18",
+      "id": 16
+    },
+    {
+      "imei": "?",
+      "marca": "REDMI",
+      "modelo": "NOTE 10 5G",
+      "idEmpresa": "1",
+      "idTrabajador": "19",
+      "id": 17
+    },
+    {
+      "imei": "?",
+      "marca": "XIAOMI",
+      "modelo": "MI 9T",
+      "idEmpresa": "1",
+      "idTrabajador": "20",
+      "id": 18
+    },
+    {
+      "imei": "?",
+      "marca": "XIAOMI",
+      "modelo": "REDMI NOTE 8T",
+      "idEmpresa": "1",
+      "idTrabajador": "22",
+      "id": 19
     }
   ],
   "extension": [
@@ -191,18 +1081,193 @@
   ],
   "caixa": [
     {
-      "id": 1,
-      "usuario_caixa": "string",
-      "dc_us_caixa": "string",
-      "idEmpresa": 1,
-      "idTrabajador": 1
+      "usuario_caixa": "U0192836",
+      "dc_us_caixa": "1",
+      "idEmpresa": "1",
+      "idTrabajador": "1",
+      "id": 1
     },
     {
-      "id": 2,
-      "usuario_caixa": "f",
-      "dc_us_caixa": "ff",
-      "idEmpresa": "f",
-      "idTrabajador": "f"
+      "usuario_caixa": "U01a148a",
+      "dc_us_caixa": "42",
+      "idEmpresa": "1",
+      "idTrabajador": "2",
+      "id": 2
+    },
+    {
+      "usuario_caixa": "U01A0AFF",
+      "dc_us_caixa": "45",
+      "idEmpresa": "1",
+      "idTrabajador": "3",
+      "id": 3
+    },
+    {
+      "usuario_caixa": "U0187919",
+      "dc_us_caixa": "3",
+      "idEmpresa": "1",
+      "idTrabajador": "4",
+      "id": 4
+    },
+    {
+      "usuario_caixa": "U0185911",
+      "dc_us_caixa": "61",
+      "idEmpresa": "1",
+      "idTrabajador": "6",
+      "id": 5
+    },
+    {
+      "usuario_caixa": "U01a1489",
+      "dc_us_caixa": "46",
+      "idEmpresa": "1",
+      "idTrabajador": "7",
+      "id": 6
+    },
+    {
+      "usuario_caixa": "U01a0f7a",
+      "dc_us_caixa": "26",
+      "idEmpresa": "1",
+      "idTrabajador": "8",
+      "id": 7
+    },
+    {
+      "usuario_caixa": "U0183938",
+      "dc_us_caixa": "36",
+      "idEmpresa": "1",
+      "idTrabajador": "9",
+      "id": 8
+    },
+    {
+      "usuario_caixa": "U01A44C3",
+      "dc_us_caixa": "70",
+      "idEmpresa": "1",
+      "idTrabajador": "10",
+      "id": 9
+    },
+    {
+      "usuario_caixa": "U0186900",
+      "dc_us_caixa": "56",
+      "idEmpresa": "1",
+      "idTrabajador": "11",
+      "id": 10
+    },
+    {
+      "usuario_caixa": "U0190406",
+      "dc_us_caixa": "02",
+      "idEmpresa": "1",
+      "idTrabajador": "12",
+      "id": 11
+    },
+    {
+      "usuario_caixa": "U0195240",
+      "dc_us_caixa": "47",
+      "idEmpresa": "1",
+      "idTrabajador": "13",
+      "id": 12
+    },
+    {
+      "usuario_caixa": "U01A4325",
+      "dc_us_caixa": "?",
+      "idEmpresa": "1",
+      "idTrabajador": "14",
+      "id": 13
+    },
+    {
+      "usuario_caixa": "U01A4940",
+      "dc_us_caixa": "?",
+      "idEmpresa": "1",
+      "idTrabajador": "15",
+      "id": 14
+    },
+    {
+      "usuario_caixa": "U0186899",
+      "dc_us_caixa": "65",
+      "idEmpresa": "1",
+      "idTrabajador": "16",
+      "id": 15
+    },
+    {
+      "usuario_caixa": "U0186261",
+      "dc_us_caixa": "86",
+      "idEmpresa": "1",
+      "idTrabajador": "17",
+      "id": 16
+    },
+    {
+      "usuario_caixa": "U01A4015",
+      "dc_us_caixa": "46",
+      "idEmpresa": "1",
+      "idTrabajador": "18",
+      "id": 17
+    },
+    {
+      "usuario_caixa": "U01A493F",
+      "dc_us_caixa": "?",
+      "idEmpresa": "1",
+      "idTrabajador": "19",
+      "id": 18
+    },
+    {
+      "usuario_caixa": "U01A3AD4",
+      "dc_us_caixa": "54",
+      "idEmpresa": "1",
+      "idTrabajador": "20",
+      "id": 19
+    },
+    {
+      "usuario_caixa": "U01A4CB6",
+      "dc_us_caixa": "?",
+      "idEmpresa": "1",
+      "idTrabajador": "21",
+      "id": 20
+    },
+    {
+      "usuario_caixa": "U01A5611",
+      "dc_us_caixa": "55",
+      "idEmpresa": "1",
+      "idTrabajador": "22",
+      "id": 21
+    },
+    {
+      "usuario_caixa": "U01A5612",
+      "dc_us_caixa": "68",
+      "idEmpresa": "1",
+      "idTrabajador": "23",
+      "id": 22
+    },
+    {
+      "usuario_caixa": "U01A506D",
+      "dc_us_caixa": "?",
+      "idEmpresa": "1",
+      "idTrabajador": "24",
+      "id": 23
+    },
+    {
+      "usuario_caixa": "U01A506C",
+      "dc_us_caixa": "94",
+      "idEmpresa": "1",
+      "idTrabajador": "26",
+      "id": 24
+    },
+    {
+      "usuario_caixa": "U01A50A9",
+      "dc_us_caixa": "?",
+      "idEmpresa": "1",
+      "idTrabajador": "27",
+      "id": 25
+    },
+    {
+      "usuario_caixa": "U0191658",
+      "dc_us_caixa": "?",
+      "idEmpresa": "1",
+      "idTrabajador": "28",
+      "id": 26
+    },
+    {
+      "usuario_caixa": "U0186893",
+      "dc_us_caixa": "87",
+      "idEmpresa": "1",
+      "idTrabajador": "32",
+      "id": 27
     }
   ]
 }
