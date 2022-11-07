@@ -55,13 +55,13 @@ export class ExtensionesComponent implements OnInit {
     })
   }
 
-  editOrdenador(id: any) {
+  editExtension(id: any) {
     this.openPopup(id);
   }
 
-  deleteOrdenador(id: any) {
+  deleteExtension(id: any) {
     alertifyjs.confirm("Eliminar", "¿Estás seguro de que deseas borrar el siguiente elemento?", () => {
-      this.api.deleteOrdenadorById(id).subscribe(r => {
+      this.api.deleteExtensionById(id).subscribe(r => {
         this.loadExtension();
       });
     }, function () {
